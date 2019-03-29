@@ -112,15 +112,27 @@ public class Person {
 服装抽象类
 
 ```java
-Finery Person {
+/**
+ * @author: LKP
+ * @date: 2019/2/16
+ */
+public class Finery extends Person {
 
-    Person (Person component){
-        .= component}
+    protected  Person component;
+    /**
+     * 打扮
+     * @param component
+     */
+    public void decorate(Person component){
+        this.component = component;
+    }
 
-    () {
-        (!= ){
-            .show()}
-    }
+    @Override
+    public void show() {
+        if(null != component){
+            component.show();
+        }
+    }
 }
 ```
 
