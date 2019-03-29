@@ -88,24 +88,31 @@ Let's Go！
 
 Person类
 
-```
-Person {
+```java
+/**
+ * @author: LKP
+ * @date: 2019/2/16
+ */
+public class Person {
 
-    String () {
-    }
+    private String name;
+    public Person() {
+    }
 
-    (String name) {
-        .= name}
+    public Person(String name) {
+        this.name = name;
+    }
 
-    () {
-        System..println(+ )}
+    public void show() {
+        System.out.println("装扮者：" + name);
+    }
 }
 ```
 
 服装抽象类
 
-```
-Finery Person {
+```java
+Finery Person {
 
     Person (Person component){
         .= component}
@@ -119,41 +126,63 @@ Finery Person {
 
 具体服饰类
 
-```
-TShirts Finery {
+```java
+/**
+ * @author: LKP
+ * @date: 2019/2/16
+ */
+public class TShirts extends Finery {
 
-    () {
-        System..println()}
+    @Override
+    public void show() {
+        System.out.println("大T恤");
+        super.show();
+    }
 }
 
-BigTrouser Finery {
+class BigTrouser extends Finery {
 
-    () {
-        System..println()}
+    @Override
+    public void show() {
+        System.out.println("垮裤");
+        super.show();
+    }
 }
 
-Sneakers Finery{
+class Sneakers extends Finery{
 
-    () {
-        System..println()}
+    @Override
+    public void show() {
+        System.out.println("破球鞋");
+        super.show();
+    }
 }
 
-LeatherShoes Finery{
+class LeatherShoes extends Finery{
 
-    () {
-        System..println()}
+    @Override
+    public void show() {
+        System.out.println("皮鞋");
+        super.show();
+    }
 }
 
-Tie Finery{
+class Tie extends Finery{
 
-    () {
-        System..println()}
+    @Override
+    public void show() {
+        System.out.println("领带");
+        super.show();
+    }
 }
 
-Suit Finery{
+class Suit extends Finery{
 
-    () {
-        System..println()}
+    @Override
+    public void show() {
+        System.out.println("西装");
+        super.show();
+    }
 }
 ```
 
@@ -163,12 +192,39 @@ Suit Finery{
 
 客户端代码
 
-```
-Main {
+```java
+/**
+ * @author: LKP
+ * @date: 2019/2/16
+ */
+public class Main {
 
-    (String\[\] args) {
+    public static void main(String[] args) {
 
-        Person person = Person()System..println()Finery tShirts = TShirts()Finery bigTrouser = BigTrouser()Finery sneakers = Sneakers()tShirts.show()bigTrouser.show()sneakers.show()person.show()System..println()Finery suit = Suit()Finery tie = Tie()Finery leatherShoes = LeatherShoes()suit.show()tie.show()leatherShoes.show()person.show()}
+        Person person = new Person("孤独键客");
+
+        System.out.println("第一种装扮：");
+
+        Finery tShirts = new TShirts();
+        Finery bigTrouser = new BigTrouser();
+        Finery sneakers = new Sneakers();
+
+        tShirts.show();
+        bigTrouser.show();
+        sneakers.show();
+        person.show();
+
+        System.out.println("\n第二种装扮：");
+
+        Finery suit = new Suit();
+        Finery tie = new Tie();
+        Finery leatherShoes = new LeatherShoes();
+
+        suit.show();
+        tie.show();
+        leatherShoes.show();
+        person.show();
+    }
 }
 ```
 
@@ -218,8 +274,8 @@ leader："宾果，而且还要按照正确的顺序串联起来控制，这里�
 
 我们修改一下具体的服饰类
 
-```
-TShirts Finery {
+```java
+TShirts Finery {
 
     () {
         System..println().show()}
@@ -258,12 +314,33 @@ Suit Finery{
 
 再修改一下客户端代码：
 
-```
-Main {
+```java
+/**
+ * @author: LKP
+ * @date: 2019/2/16
+ */
+public class Main {
 
-    (String\[\] args) {
+    public static void main(String[] args) {
 
-        Person person = Person()System..println()Sneakers sneakers = Sneakers()BigTrouser bigTrouser = BigTrouser()TShirts tShirts = TShirts()sneakers.decorate(person)bigTrouser.decorate(sneakers)tShirts.decorate(bigTrouser)tShirts.show()System..println()LeatherShoes leatherShoes = LeatherShoes()Tie tie = Tie()Suit suit = Suit()leatherShoes.decorate(person)tie.decorate(leatherShoes)suit.decorate(tie)suit.show()}
+        Person person = new Person("孤独键客");
+        System.out.println("第一种装扮：");
+        Sneakers sneakers = new Sneakers();
+        BigTrouser bigTrouser = new BigTrouser();
+        TShirts tShirts = new TShirts();
+        sneakers.decorate(person);
+        bigTrouser.decorate(sneakers);
+        tShirts.decorate(bigTrouser);
+        tShirts.show();
+        System.out.println("第二种装扮：");
+        LeatherShoes leatherShoes = new LeatherShoes();
+        Tie tie = new Tie();
+        Suit suit = new Suit();
+        leatherShoes.decorate(person);
+        tie.decorate(leatherShoes);
+        suit.decorate(tie);
+        suit.show();
+    }
 }
 ```
 
