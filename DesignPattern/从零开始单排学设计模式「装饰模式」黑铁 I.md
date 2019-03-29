@@ -275,40 +275,62 @@ leader："宾果，而且还要按照正确的顺序串联起来控制，这里�
 我们修改一下具体的服饰类
 
 ```java
-TShirts Finery {
+/**
+ * @author: LKP
+ * @date: 2019/2/16
+ */
+public class TShirts extends Finery {
 
-    () {
-        System..println().show()}
+    @Override
+    public void show() {
+        System.out.println("大T恤");
+        super.show();
+    }
 }
 
-BigTrouser Finery {
+class BigTrouser extends Finery {
 
-    () {
-        System..println().show()}
+    @Override
+    public void show() {
+        System.out.println("垮裤");
+        super.show();
+    }
 }
 
-Sneakers Finery{
+class Sneakers extends Finery{
 
-    () {
-        System..println().show()}
+    @Override
+    public void show() {
+        System.out.println("破球鞋");
+        super.show();
+    }
 }
 
-LeatherShoes Finery{
+class LeatherShoes extends Finery{
 
-    () {
-        System..println().show()}
+    @Override
+    public void show() {
+        System.out.println("皮鞋");
+        super.show();
+    }
 }
 
-Tie Finery{
+class Tie extends Finery{
 
-    () {
-        System..println().show()}
+    @Override
+    public void show() {
+        System.out.println("领带");
+        super.show();
+    }
 }
 
-Suit Finery{
+class Suit extends Finery{
 
-    () {
-        System..println().show()}
+    @Override
+    public void show() {
+        System.out.println("西装");
+        super.show();
+    }
 }
 ```
 
