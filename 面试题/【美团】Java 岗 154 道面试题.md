@@ -2,69 +2,69 @@
 
 1. ArrayList 和 Vector 的区别。
 
-说说 ArrayList,Vector, LinkedList 的存储性能和特性。
+2. 说说 ArrayList,Vector, LinkedList 的存储性能和特性。
 
-快速失败 (fail-fast) 和安全失败 (fail-safe) 的区别是什么？
+3. 快速失败 (fail-fast) 和安全失败 (fail-safe) 的区别是什么？
 
-hashmap 的数据结构。
+4. hashmap 的数据结构。
 
-HashMap 的工作原理是什么?
+5. HashMap 的工作原理是什么?
 
-Hashmap 什么时候进行扩容呢？
+6. Hashmap 什么时候进行扩容呢？
 
-List、Map、Set 三个接口，存取元素时，各有什么特点？
+7. List、Map、Set 三个接口，存取元素时，各有什么特点？
 
-Set 里的元素是不能重复的，那么用什么方法来区分重复与否呢? 是用 == 还是 equals()? 它们有何区别?
+8. Set 里的元素是不能重复的，那么用什么方法来区分重复与否呢? 是用 == 还是 equals()? 它们有何区别?
 
-两个对象值相同 (x.equals(y) == true)，但却可有不同的 hash code，这句话对不对?
+9. 两个对象值相同 (x.equals(y) == true)，但却可有不同的 hash code，这句话对不对?
 
-heap 和 stack 有什么区别。
+10. heap 和 stack 有什么区别。
 
-Java 集合类框架的基本接口有哪些？
+11. Java 集合类框架的基本接口有哪些？
 
-HashSet 和 TreeSet 有什么区别？
+12. HashSet 和 TreeSet 有什么区别？
 
-HashSet 的底层实现是什么?
+13. HashSet 的底层实现是什么?
 
-LinkedHashMap 的实现原理?
+14. LinkedHashMap 的实现原理?
 
-为什么集合类没有实现 Cloneable 和 Serializable 接口？
+15. 为什么集合类没有实现 Cloneable 和 Serializable 接口？
 
-什么是迭代器 (Iterator)？
+16. 什么是迭代器 (Iterator)？
 
-Iterator 和 ListIterator 的区别是什么？
+17. Iterator 和 ListIterator 的区别是什么？
 
-数组 (Array) 和列表 (ArrayList) 有什么区别？什么时候应该使用 Array 而不是 ArrayList？
+18. 数组 (Array) 和列表 (ArrayList) 有什么区别？什么时候应该使用 Array 而不是 ArrayList？
 
-Java 集合类框架的最佳实践有哪些？
+19. Java 集合类框架的最佳实践有哪些？
 
-Set 里的元素是不能重复的，那么用什么方法来区分重复与否呢？是用 == 还是 equals()？它们有何区别？
+20. Set 里的元素是不能重复的，那么用什么方法来区分重复与否呢？是用 == 还是 equals()？它们有何区别？
 
-Comparable 和 Comparator 接口是干什么的？列出它们的区别
+21. Comparable 和 Comparator 接口是干什么的？列出它们的区别
 
-Collection 和 Collections 的区别。
+22. Collection 和 Collections 的区别。
 
-JVM与调优21题
+### JVM与调优21题
 
-Java 类加载过程？
+1. Java 类加载过程？
 
-描述一下 JVM 加载 Class 文件的原理机制?
+2. 描述一下 JVM 加载 Class 文件的原理机制?
 
-Java 内存分配。
+3. Java 内存分配。
 
-GC 是什么? 为什么要有 GC？
+4. GC 是什么? 为什么要有 GC？
 
-简述 Java 垃圾回收机制
+5. 简述 Java 垃圾回收机制
 
-如何判断一个对象是否存活？（或者 GC 对象的判定方法）
+6. 如何判断一个对象是否存活？（或者 GC 对象的判定方法）
 
-垃圾回收的优点和原理。并考虑 2 种回收机制
+7. 垃圾回收的优点和原理。并考虑 2 种回收机制
 
-垃圾回收器的基本原理是什么？垃圾回收器可以马上回收内存吗？有什么办法主动通知虚拟机进行垃圾回收？
+8. 垃圾回收器的基本原理是什么？垃圾回收器可以马上回收内存吗？有什么办法主动通知虚拟机进行垃圾回收？
 
-Java 中会存在内存泄漏吗，请简单描述
+9. Java 中会存在内存泄漏吗，请简单描述
 
-深拷贝和浅拷贝。
+10. 深拷贝和浅拷贝。
 
 System.gc() 和 Runtime.gc() 会做什么事情？
 
