@@ -4,7 +4,7 @@
 
 1. <a href="#1.1">ArrayList 和 Vector 的区别。</a>
 
-2. 说说 ArrayList,Vector, LinkedList 的存储性能和特性。
+2. <a href="#1.2">说说 ArrayList,Vector, LinkedList 的存储性能和特性。</a>
 
 3. 快速失败 (fail-fast) 和安全失败 (fail-safe) 的区别是什么？
 
@@ -335,7 +335,7 @@
 
 ## 解析
 
-<p id="1.1">1.ArrayList 和 Vector 的区别</p>
+<p id="1.1">1、ArrayList 和 Vector 的区别。</p>
 
 | ArrayList  | Vector |
 |-------|-------|
@@ -344,3 +344,5 @@
 | 3、不适合进行删除或插入操作 | 3、不适合删除或插入操作 |
 | 4、为了防止数组动态扩充次数过多，建议创建ArrayList时，给定初始容量 | 4、为了防止数组动态扩充次数过多，建议创建Vector时，给定初始容量 |
 | 5、多线程中使用不安全，适合在单线程访问时使用，效率较高 | 5、线程安全，适合在多线程访问时使用，效率较低 |
+
+<p id="1.2">2、说说 ArrayList，Vector， LinkedList 的存储性能和特性。</p>
