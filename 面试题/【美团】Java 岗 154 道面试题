@@ -1,6 +1,6 @@
-###的Java集合22题
+### Java集合22题
 
-ArrayList 和 Vector 的区别。
+1. ArrayList 和 Vector 的区别。
 
 说说 ArrayList,Vector, LinkedList 的存储性能和特性。
 
