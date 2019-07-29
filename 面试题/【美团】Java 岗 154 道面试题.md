@@ -335,7 +335,12 @@
 
 ## 解析
 
-<h2 id="1.1">ArrayList 和 Vector 的区别</h2>
-![123](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasTGCKNjJZnZWxrFAavVDwpgktFa9aeDq8CiaFoibLcQsFmapOSQ0AWNceBUGYxucmIODXOkHPhiad7MQ/640 "my-logo")
+<p id="1.1">1.ArrayList 和 Vector 的区别</p>
 
-![Image text](https://dwz.cn/U8onOxRU)
+| ArrayList  | Vector |
+|-------|-------|
+| 1、实现原理：采用动态对象数组实现，默认构造方法创建了一个空数组 | 1、实现原理：采用动态数组实现，默认构造创建了一个大小为10的对象数组 |
+| 2、第一次添加元素，扩展容量为10，之后的扩充算法：原来数组大小+原来数组的一半 | 2、扩充的算法：当增量为0时，扩充为原来大小的2倍，当增量大于0时，扩充为原来大小+增量 |
+| 3、不适合进行删除或插入操作 | 3、不适合删除或插入操作 |
+| 4、为了防止数组动态扩充次数过多，建议创建ArrayList时，给定初始容量 | 4、为了防止数组动态扩充次数过多，建议创建Vector时，给定初始容量 |
+| 5、多线程中使用不安全，适合在单线程访问时使用，效率较高 | 5、线程安全，适合在多线程访问时使用，效率较低 |
