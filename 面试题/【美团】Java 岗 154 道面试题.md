@@ -1,3 +1,5 @@
+# 目录
+
 ### Java集合22题
 
 1. ArrayList 和 Vector 的区别。
@@ -44,6 +46,7 @@
 
 22. Collection 和 Collections 的区别。
 
+
 ### JVM与调优21题
 
 1. Java 类加载过程？
@@ -66,141 +69,142 @@
 
 10. 深拷贝和浅拷贝。
 
-System.gc() 和 Runtime.gc() 会做什么事情？
+11. System.gc() 和 Runtime.gc() 会做什么事情？
 
-finalize() 方法什么时候被调用？析构函数 (finalization) 的目的是什么？
+12. finalize() 方法什么时候被调用？析构函数 (finalization) 的目的是什么？
 
-如果对象的引用被置为 null，垃圾收集器是否会立即释放对象占用的内存？
+13. 如果对象的引用被置为 null，垃圾收集器是否会立即释放对象占用的内存？
 
-什么是分布式垃圾回收（DGC）？它是如何工作的？
+14. 什么是分布式垃圾回收（DGC）？它是如何工作的？
 
-串行（serial）收集器和吞吐量（throughput）收集器的区别是什么？
+15. 串行（serial）收集器和吞吐量（throughput）收集器的区别是什么？
 
-在 Java 中，对象什么时候可以被垃圾回收？
+16. 在 Java 中，对象什么时候可以被垃圾回收？
 
-简述 Java 内存分配与回收策率以及 Minor GC 和 Major GC。
+17. 简述 Java 内存分配与回收策率以及 Minor GC 和 Major GC。
 
-JVM 的永久代中会发生垃圾回收么？
+18. JVM 的永久代中会发生垃圾回收么？
 
-Java 中垃圾收集的方法有哪些？
+19. Java 中垃圾收集的方法有哪些？
 
-什么是类加载器，类加载器有哪些？
+20. 什么是类加载器，类加载器有哪些？
 
-类加载器双亲委派模型机制？
+21. 类加载器双亲委派模型机制？
 
-并发编程28题
 
-Synchronized 用过吗，其原理是什么？
+### 并发编程28题
 
-你刚才提到获取对象的锁，这个“锁”到底是什么？如何确定对象的锁？
+1. Synchronized 用过吗，其原理是什么？
 
-什么是可重入性，为什么说 Synchronized 是可重入锁？
+2. 你刚才提到获取对象的锁，这个“锁”到底是什么？如何确定对象的锁？
 
-JVM 对 Java 的原生锁做了哪些优化？48
+3. 什么是可重入性，为什么说 Synchronized 是可重入锁？
 
-为什么说 Synchronized 是非公平锁？49
+4. JVM 对 Java 的原生锁做了哪些优化？48
+ 
+5. 为什么说 Synchronized 是非公平锁？49
 
-什么是锁消除和锁粗化？49
+6. 什么是锁消除和锁粗化？49
 
-为什么说 Synchronized 是一个悲观锁？乐观锁的实现原理又是什么？什么是 CAS，它有什么特性？
+7. 为什么说 Synchronized 是一个悲观锁？乐观锁的实现原理又是什么？什么是 CAS，它有什么特性？
 
-乐观锁一定就是好的吗？
+8. 乐观锁一定就是好的吗？
 
-跟 Synchronized 相比，可重入锁 ReentrantLock 其实现原理有什么不同？
+9. 跟 Synchronized 相比，可重入锁 ReentrantLock 其实现原理有什么不同？
 
-那么请谈谈 AQS 框架是怎么回事儿？
+10. 那么请谈谈 AQS 框架是怎么回事儿？
 
-请尽可能详尽地对比下 Synchronized 和 ReentrantLock 的异同。
+11. 请尽可能详尽地对比下 Synchronized 和 ReentrantLock 的异同。
 
-ReentrantLock 是如何实现可重入性的？
+12. ReentrantLock 是如何实现可重入性的？
 
-除了 ReetrantLock，你还接触过 JUC 中的哪些并发工具？
+13. 除了 ReetrantLock，你还接触过 JUC 中的哪些并发工具？
 
-请谈谈 ReadWriteLock 和 StampedLock。
+14. 请谈谈 ReadWriteLock 和 StampedLock。
 
-如何让 Java 的线程彼此同步？你了解过哪些同步器？请分别介绍下。
+15. 如何让 Java 的线程彼此同步？你了解过哪些同步器？请分别介绍下。
 
-CyclicBarrier 和 CountDownLatch 看起来很相似，请对比下呢？
+16. CyclicBarrier 和 CountDownLatch 看起来很相似，请对比下呢？
 
-Java 线程池相关问题
+17. Java 线程池相关问题
 
-Java 中的线程池是如何实现的？
+18. Java 中的线程池是如何实现的？
 
-创建线程池的几个核心构造参数？
+19. 创建线程池的几个核心构造参数？
 
-线程池中的线程是怎么创建的？是一开始就随着线程池的启动创建好的吗？
+20. 线程池中的线程是怎么创建的？是一开始就随着线程池的启动创建好的吗？
 
-既然提到可以通过配置不同参数创建出不同的线程池，那么 Java 中默认实现好的线程池又有哪些呢？请比较它们的异同
+21. 既然提到可以通过配置不同参数创建出不同的线程池，那么 Java 中默认实现好的线程池又有哪些呢？请比较它们的异同
 
-如何在 Java 线程池中提交线程？
+22. 如何在 Java 线程池中提交线程？
 
-什么是 Java 的内存模型，Java 中各个线程是怎么彼此看到对方的变量的？
+23. 什么是 Java 的内存模型，Java 中各个线程是怎么彼此看到对方的变量的？
 
-请谈谈 volatile 有什么特点，为什么它能保证变量对所有线程的可见性？
+24. 请谈谈 volatile 有什么特点，为什么它能保证变量对所有线程的可见性？
 
-既然 volatile 能够保证线程间的变量可见性，是不是就意味着基于 volatile 变量的运算就是并发安全的？
+25. 既然 volatile 能够保证线程间的变量可见性，是不是就意味着基于 volatile 变量的运算就是并发安全的？
 
-请对比下 volatile 对比 Synchronized 的异同。
+26. 请对比下 volatile 对比 Synchronized 的异同。
 
-请谈谈 ThreadLocal 是怎么解决并发安全的？
+27. 请谈谈 ThreadLocal 是怎么解决并发安全的？
 
-很多人都说要慎用 ThreadLocal，谈谈你的理解，使用 ThreadLocal 需要注意些什么？
+28. 很多人都说要慎用 ThreadLocal，谈谈你的理解，使用 ThreadLocal 需要注意些什么？
 
-spring 25题
 
-1、什么是 Spring 框架？Spring 框架有哪些主要模块？
+### spring 25题
 
-2、使用 Spring 框架能带来哪些好处？
+1. 什么是 Spring 框架？Spring 框架有哪些主要模块？
 
-3、什么是控制反转(IOC)？什么是依赖注入？
+2. 使用 Spring 框架能带来哪些好处？
 
-4、请解释下 Spring 框架中的 IoC？
+3. 什么是控制反转(IOC)？什么是依赖注入？
 
-5、BeanFactory 和 ApplicationContext 有什么区别？
+4. 请解释下 Spring 框架中的 IoC？
 
-6、Spring 有几种配置方式？
+5. BeanFactory 和 ApplicationContext 有什么区别？
 
-7、如何用基于 XML 配置的方式配置 Spring？
+6. Spring 有几种配置方式？
 
-8、如何用基于 Java 配置的方式配置 Spring？
+7. 如何用基于 XML 配置的方式配置 Spring？
 
-9、怎样用注解的方式配置 Spring？
+8. 如何用基于 Java 配置的方式配置 Spring？
 
-10、请解释 Spring Bean 的生命周期？
+9. 怎样用注解的方式配置 Spring？
 
-11、Spring Bean 的作用域之间有什么区别？
+10. 请解释 Spring Bean 的生命周期？
 
-12、什么是 Spring inner beans？
+11. Spring Bean 的作用域之间有什么区别？
 
-13、Spring 框架中的单例 Beans 是线程安全的么？
+12. 什么是 Spring inner beans？
 
-14、请举例说明如何在 Spring 中注入一个 Java Collection？
+13. Spring 框架中的单例 Beans 是线程安全的么？
 
-15、如何向 Spring Bean 中注入一个 Java.util.Properties？
+14. 请举例说明如何在 Spring 中注入一个 Java Collection？
 
-16、请解释 Spring Bean 的自动装配？
+15. 如何向 Spring Bean 中注入一个 Java.util.Properties？
 
-17、请解释自动装配模式的区别？
+16. 请解释 Spring Bean 的自动装配？
 
-18、如何开启基于注解的自动装配？
+17. 请解释自动装配模式的区别？
 
-19、请举例解释@Required 注解？
+18. 如何开启基于注解的自动装配？
 
-20、请举例解释@Autowired 注解？
+19. 请举例解释@Required 注解？
 
-21、请举例说明@Qualifier 注解？
+20. 请举例解释@Autowired 注解？
 
-22、构造方法注入和设值注入有什么区别？
+21. 请举例说明@Qualifier 注解？
 
-23、Spring 框架中有哪些不同类型的事件？
+22. 构造方法注入和设值注入有什么区别？
 
-24、FileSystemResource 和 ClassPathResource 有何区别？
+23. Spring 框架中有哪些不同类型的事件？
 
-25、Spring 框架中都用到了哪些设计模式？
+24. FileSystemResource 和 ClassPathResource 有何区别？
 
+25. Spring 框架中都用到了哪些设计模式？
 
 
-设计模式 10题
+### 设计模式 10题
 
 1.请列举出在 JDK 中几个常用的设计模式？
 
@@ -225,111 +229,107 @@ spring 25题
 10.举例说明什么情况下会更倾向于使用抽象类而不是接口
 
 
+### SpringBoot 22题
 
-springboot 22题
+1. 什么是 Spring Boot？
 
-什么是 Spring Boot？
+2. Spring Boot 有哪些优点？
 
-Spring Boot 有哪些优点？
+3. 什么是 JavaConfig？
 
-什么是 JavaConfig？
+4. 如何重新加载 Spring Boot 上的更改，而无需重新启动服务器？
 
-如何重新加载 Spring Boot 上的更改，而无需重新启动服务器？
+5. Spring Boot 中的监视器是什么？
 
-Spring Boot 中的监视器是什么？
+6. 如何在 Spring Boot 中禁用 Actuator 端点安全性？
 
-如何在 Spring Boot 中禁用 Actuator 端点安全性？
+7. 如何在自定义端口上运行 Spring Boot 应用程序？
 
-如何在自定义端口上运行 Spring Boot 应用程序？
+8. 什么是 YAML？
 
-什么是 YAML？
+9. 如何实现 Spring Boot 应用程序的安全性？
 
-如何实现 Spring Boot 应用程序的安全性？
+10. 如何集成 Spring Boot 和 ActiveMQ？
 
-如何集成 Spring Boot 和 ActiveMQ？
+11. 如何使用 Spring Boot 实现分页和排序？
 
-如何使用 Spring Boot 实现分页和排序？
+12. 什么是 Swagger？你用 Spring Boot 实现了它吗？
 
-什么是 Swagger？你用 Spring Boot 实现了它吗？
+13. 什么是 Spring Profiles？
 
-什么是 Spring Profiles？
+14. 什么是 Spring Batch？
 
-什么是 Spring Batch？
+15. 什么是 FreeMarker 模板？
 
-什么是 FreeMarker 模板？
+16. 如何使用 Spring Boot 实现异常处理？
 
-如何使用 Spring Boot 实现异常处理？
+17. 您使用了哪些 starter maven 依赖项？
 
-您使用了哪些 starter maven 依赖项？
+18. 什么是 CSRF 攻击？
 
-什么是 CSRF 攻击？
+19. 什么是 WebSockets？
 
-什么是 WebSockets？
+20. 什么是 AOP？
 
-什么是 AOP？
+21. 什么是 Apache Kafka？
 
-什么是 Apache Kafka？
-
-我们如何监视所有 Spring Boot 微服务？
-
+22. 我们如何监视所有 Spring Boot 微服务？
 
 
-Netty10题
+### Netty10题
 
-BIO、NIO和AIO的区别？
+1. BIO、NIO和AIO的区别？
 
-NIO的组成？
+2. NIO的组成？
 
-Netty的特点？
+3. Netty的特点？
 
-Netty的线程模型？
+4. Netty的线程模型？
 
-TCP 粘包/拆包的原因及解决方法？
+5. TCP 粘包/拆包的原因及解决方法？
 
-了解哪几种序列化协议？
+6. 了解哪几种序列化协议？
 
-如何选择序列化协议？
+7. 如何选择序列化协议？
 
-Netty的零拷贝实现？
+8. Netty的零拷贝实现？
 
-Netty的高性能表现在哪些方面？
+9. Netty的高性能表现在哪些方面？
 
-NIOEventLoopGroup源码？
-
-
+10. NIOEventLoopGroup源码？
 
 
+### Redis 16题
 
-Redis 16题
+1. 什么是redis?
 
-什么是redis?
+2. Reids的特点
 
-Reids的特点
+4. Redis支持的数据类型
 
-Redis支持的数据类型
+5. Redis是单进程单线程的
 
-Redis是单进程单线程的
+6. 虚拟内存
 
-虚拟内存
+7. Redis锁
 
-Redis锁
+8. 读写分离模型
 
-读写分离模型
+9. 数据分片模型
 
-数据分片模型
+10. Redis的回收策略
 
-Redis的回收策略
+11. 使用Redis有哪些好处？
 
-使用Redis有哪些好处？
+12. redis相比memcached有哪些优势？
 
-redis相比memcached有哪些优势？4
+13. redis常见性能问题和解决方案
 
-redis常见性能问题和解决方案
+14. MySQL里有2000w数据，redis中只存20w的数据，如何保证redis中的数据都是热点数据245
 
-MySQL里有2000w数据，redis中只存20w的数据，如何保证redis中的数据都是热点数据245
+15. Memcache与Redis的区别都有哪些？
 
-Memcache与Redis的区别都有哪些？
+16. Redis 常见的性能问题都有哪些？如何解决？
 
-Redis 常见的性能问题都有哪些？如何解决？
+17. Redis 最适合的场景
 
-Redis 最适合的场景
