@@ -1,4 +1,4 @@
-# 目录
+## 目录
 
 ### Java集合22题
 
@@ -333,6 +333,8 @@
 
 17. Redis 最适合的场景
 
-# 解析
+## 解析
 
 <h2 id="1.1">ArrayList 和 Vector 的区别</h2>
+![123](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasTGCKNjJZnZWxrFAavVDwpgktFa9aeDq8CiaFoibLcQsFmapOSQ0AWNceBUGYxucmIODXOkHPhiad7MQ/640)
+
