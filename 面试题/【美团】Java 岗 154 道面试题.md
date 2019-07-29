@@ -2,7 +2,7 @@
 
 ### Java集合22题
 
-1. ArrayList 和 Vector 的区别。
+1. <a href="#1.1">ArrayList 和 Vector 的区别。</a>
 
 2. 说说 ArrayList,Vector, LinkedList 的存储性能和特性。
 
@@ -333,3 +333,6 @@
 
 17. Redis 最适合的场景
 
+# 解析
+
+<h2 id="1.1">ArrayList 和 Vector 的区别</h2>
