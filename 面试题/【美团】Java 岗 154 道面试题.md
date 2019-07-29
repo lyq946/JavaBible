@@ -336,5 +336,6 @@
 ## 解析
 
 <h2 id="1.1">ArrayList 和 Vector 的区别</h2>
-![123](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasTGCKNjJZnZWxrFAavVDwpgktFa9aeDq8CiaFoibLcQsFmapOSQ0AWNceBUGYxucmIODXOkHPhiad7MQ/640)
+![123](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasTGCKNjJZnZWxrFAavVDwpgktFa9aeDq8CiaFoibLcQsFmapOSQ0AWNceBUGYxucmIODXOkHPhiad7MQ/640 "my-logo")
 
+![Image text](https://dwz.cn/U8onOxRU)
