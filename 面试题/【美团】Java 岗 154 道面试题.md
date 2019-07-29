@@ -335,6 +335,8 @@
 
 ## 解析
 
+### Java集合22题
+
 <p id="1.1">1、ArrayList 和 Vector 的区别。</p>
 
 | ArrayList  | Vector |
