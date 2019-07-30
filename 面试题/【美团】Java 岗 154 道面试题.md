@@ -8,7 +8,7 @@
 
 3. <a href="#1.3">快速失败 (fail-fast) 和安全失败 (fail-safe) 的区别是什么？</a>
 
-4. hashmap 的数据结构。
+4. <a href="#1.4">HashMap 的数据结构。</a>
 
 5. HashMap 的工作原理是什么?
 
@@ -386,5 +386,7 @@ java.util 包下面的所有的集合类都是快速失败的，而java.util.con
 安全失败就是对于数据实时性要求不高而采用的一种机制，不管在多线程时如何修改我遍历的都是复印件，并且不抛出异常。
 
 若在多线程环境下使用fail-fast机制的集合，建议使用“java.util.concurrent 包下的类”去取代“java.util 包下的类”。
+
+### <p id="1.4">HashMap 的数据结构。</p>
 
 
