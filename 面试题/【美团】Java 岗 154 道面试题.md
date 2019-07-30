@@ -6,7 +6,7 @@
 
 2. <a href="#1.2">说说 ArrayList,Vector, LinkedList 的存储性能和特性。</a>
 
-3. 快速失败 (fail-fast) 和安全失败 (fail-safe) 的区别是什么？
+3. <a href="#1.3">快速失败 (fail-fast) 和安全失败 (fail-safe) 的区别是什么？</a>
 
 4. hashmap 的数据结构。
 
