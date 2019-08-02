@@ -4,7 +4,7 @@
 
 1. <a href="#1.1">ArrayList 和 Vector 的区别。</a>
 
-2. <a href="#1.2">说说 ArrayList,Vector, LinkedList 的存储性能和特性。</a>
+2. <a href="#1.2">说说 ArrayList，Vector，LinkedList 的存储性能和特性。</a>
 
 3. <a href="#1.3">快速失败 (fail-fast) 和安全失败 (fail-safe) 的区别是什么？</a>
 
@@ -389,10 +389,65 @@ java.util 包下面的所有的集合类都是快速失败的，而java.util.con
 
 ### <p id="1.4">4、HashMap 的数据结构。</p>
 
-**1.7之前**
-关键字：数组+链表
+**HashMap的底层实现**
+
+**JDK1.8之前**
+
+JDK1.8之前HashMap的底层是 **数组和链表** 结合在一起使用也就是 链表散列。
+
+HashMap通过key的HashCode经过扰动函数处理后得到Hash值，然后通过（n-1）& Hash判断当前元素存放的位置（这里n指的是数组的长度），如果当前位置存在元素的话，就判断元素与要存入的元素的hash值以及key是否相同，如果相同的话，直接覆盖，不相同就通过拉链法解决冲突。
+
+所谓扰动函数指的就是HashMap的hahs方法。
+
+使用hahs方法也就是扰动函数是为了防止一些实现较差的 hashCode（）方法，换句话说就是使用扰动函数之后可以减少碰撞。
+
+JDK1.8HashMap的hash源码：
+```java
+static final int hash(Object key) {
+    int h;
+    // key.hashCode()：返回散列值也就是hashcode
+    // ^ ：按位异或
+    // >>>:无符号右移，忽略符号位，空位都以0补齐
+    return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
+}
+```
+JDK1.8的hash方法相比于JDK1.7hash方法更加简化，但是原理不变。
+对比一下JDK1.7的HashMap的hash方法源码：
+```java
+static int hash(int h) {
+    // This function ensures that hashCodes that differ only by
+    // constant multiples at each bit position have a bounded
+    // number of collisions (approximately 8 at default load factor).
+
+    h ^= (h >>> 20) ^ (h >>> 12);
+    return h ^ (h >>> 7) ^ (h >>> 4);
+}
+```
+相比于JDK1.8的hash方法，JDK1.7的hash方法的性能会少差一点点，因为毕竟扰动了4次。
+
+所谓“拉链法”就是：将链表和数组相结合。也就是说创建一个链表数组，数组中每一格就是一个链表。若遇到哈希冲突，则将冲突的值加到链表中即可。
+
+![1.7HashMap数据结构演示图](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYUvia1ribkJKBo5msWTzUAZgrDcibA2gyUKqpOiaucLIvKxzzPQrf4aH26A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+**JDK1.8之后**
+相比于之前的版本，JDK1.8之后在解决哈希冲突时有了较大的变化，当链表长度大于阈（yu四声）值（默认为8）时，将链表转换为红黑树，以减少搜索时间。
+
+![1.8HashMap数据结构演示图](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYUQpxaamTYUBUO77RjMavbVEUfCo8fzrRuVSicFrydHiaMFm4v3EIKbMw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+> TreeMap、TreeSet以及JDK1.8之后的HashMap底层都用了红黑树。红黑树就是为了解决二叉查找树的缺陷，因为二叉查找树在某些情况下会退化成一个线程结构。
+
+
+
 
 **1.8之后**
 关键字：数组+链表+红黑树（超过8个节点会转换为红黑树）
+
+### <p id="1.5">HashMap的工作原理是什么？</p>
+
+### <p id="1.6">HashMap什么时候进行扩容呢？</p>
+
+### <p id="1.7">List、Map、Set三个接口，存取元素时，各有什么特点？</p>
+
+
 
 
