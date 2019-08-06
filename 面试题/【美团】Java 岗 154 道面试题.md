@@ -342,9 +342,9 @@
 | ArrayList  | Vector |
 |-------|-------|
 | 1、实现原理：采用动态对象数组实现，默认构造方法创建了一个空数组 | 1、实现原理：采用动态对象数组实现，默认构造创建了一个大小为10的对象数组 |
-| 2、第一次添加元素，扩展容量为10，之后的扩充算法：原来数组大小+原来数组的一半 | 2、扩充的算法：当增量为0时，扩充为原来大小的2倍，当增量大于0时，扩充为原来大小+增量 |
+| 2、第一次添加元素，扩展容量为 10，之后的扩充算法：原来数组大小+原来数组的一半 | 2、扩充的算法：当增量为0时，扩充为原来大小的 2 倍，当增量大于 0 时，扩充为原来大小+增量 |
 | 3、不适合进行删除或插入操作 | 3、不适合删除或插入操作 |
-| 4、为了防止数组动态扩充次数过多，建议创建ArrayList时，给定初始容量 | 4、为了防止数组动态扩充次数过多，建议创建Vector时，给定初始容量 |
+| 4、为了防止数组动态扩充次数过多，建议创建 ArrayList 时，给定初始容量 | 4、为了防止数组动态扩充次数过多，建议创建 Vector 时，给定初始容量 |
 | 5、多线程中使用不安全，适合在单线程访问时使用，效率较高 | 5、线程安全，适合在多线程访问时使用，效率较低 |
 
 
@@ -377,26 +377,27 @@ LinkedList 使用双向链表方式存储数据（将内存中零散的内存单
 
 Iterator 的安全失败是基于对底层集合做拷贝，因此，它不受源集合上修改的影响。
 
-java.util 包下面的所有的集合类都是快速失败的，而java.util.concurrent 包下面的所有的类都是安全失败的。
+java.util 包下面的所有的集合类都是快速失败的，而 java.util.concurrent 包下面的所有的类都是安全失败的。
 
 快速失败的迭代器会抛出 ConcurrentModificationException 异常，而安全失败的迭代器永远不会抛出这样的异常。
 
 
 ### <p id="1.4">4、HashMap 的数据结构。</p>
 
-**HashMap的底层实现**
+**HashMap 的底层实现**
 
-**JDK1.8之前**
+**JDK1.8 之前**
 
-JDK1.8之前HashMap的底层是 **数组和链表** 结合在一起使用也就是 链表散列。
+JDK1.8 之前 HashMap 的底层是 **数组和链表** 结合在一起使用也就是 链表散列。
 
-HashMap通过key的HashCode经过扰动函数处理后得到Hash值，然后通过（n-1）& Hash判断当前元素存放的位置（这里n指的是数组的长度），如果当前位置存在元素的话，就判断元素与要存入的元素的hash值以及key是否相同，如果相同的话，直接覆盖，不相同就通过拉链法解决冲突。
+HashMap 通过 key 的 HashCode 经过扰动函数处理后得到 hash 值，然后通过（n-1）& hash 判断当前元素存放的位置（这里 n 指的是数组的长度），如果当前位置存在元素的话，就判断元素与要存入的元素的 hash 值以及 key 是否相同，如果相同的话，直接覆盖，不相同就通过拉链法解决冲突。
 
-所谓扰动函数指的就是HashMap的hahs方法。
+所谓扰动函数指的就是 HashMap 的 hash 方法。
 
-使用hahs方法也就是扰动函数是为了防止一些实现较差的 hashCode（）方法，换句话说就是使用扰动函数之后可以减少碰撞。
+使用 hash 方法也就是扰动函数是为了防止一些实现较差的 hashCode（）方法，换句话说就是使用扰动函数之后可以减少碰撞。
 
-JDK1.8HashMap的hash源码：
+JDK1.8 HashMa p的 hash 源码：
+
 ```java
 static final int hash(Object key) {
     int h;
@@ -406,8 +407,11 @@ static final int hash(Object key) {
     return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
 }
 ```
-JDK1.8的hash方法相比于JDK1.7hash方法更加简化，但是原理不变。
-对比一下JDK1.7的HashMap的hash方法源码：
+
+JDK1.8 的 hash 方法相比于 JDK1.7 hash 方法更加简化，但是原理不变。
+
+对比一下 JDK1.7 的 HashMap 的 hash 方法源码：
+
 ```java
 static int hash(int h) {
     // This function ensures that hashCodes that differ only by
@@ -418,118 +422,123 @@ static int hash(int h) {
     return h ^ (h >>> 7) ^ (h >>> 4);
 }
 ```
-相比于JDK1.8的hash方法，JDK1.7的hash方法的性能会少差一点点，因为毕竟扰动了4次。
+
+相比于 JDK1.8 的 hash 方法，JDK1.7 的 hash 方法的性能会少差一点点，因为毕竟扰动了 4 次。
 
 所谓“拉链法”就是：将链表和数组相结合。也就是说创建一个链表数组，数组中每一格就是一个链表。若遇到哈希冲突，则将冲突的值加到链表中即可。
 
-![1.7HashMap数据结构演示图](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYUvia1ribkJKBo5msWTzUAZgrDcibA2gyUKqpOiaucLIvKxzzPQrf4aH26A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![1.7HashMap 数据结构演示图](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYUvia1ribkJKBo5msWTzUAZgrDcibA2gyUKqpOiaucLIvKxzzPQrf4aH26A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
-**JDK1.8之后**
-相比于之前的版本，JDK1.8之后在解决哈希冲突时有了较大的变化，当链表长度大于阈（yu四声）值（默认为8）时，将链表转换为红黑树，以减少搜索时间。
+**JDK1.8 之后**
+相比于之前的版本，JDK1.8 之后在解决哈希冲突时有了较大的变化，当链表长度大于阈（yu 四声）值（默认为 8）时，将链表转换为红黑树，以减少搜索时间。
 
-![1.8HashMap数据结构演示图](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYUQpxaamTYUBUO77RjMavbVEUfCo8fzrRuVSicFrydHiaMFm4v3EIKbMw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![1.8HashMap 数据结构演示图](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYUQpxaamTYUBUO77RjMavbVEUfCo8fzrRuVSicFrydHiaMFm4v3EIKbMw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
-> TreeMap、TreeSet以及JDK1.8之后的HashMap底层都用了红黑树。红黑树就是为了解决二叉查找树的缺陷，因为二叉查找树在某些情况下会退化成一个线程结构。
+> TreeMap、TreeSet 以及 JDK1.8 之后的 HashMap 底层都用了红黑树。红黑树就是为了解决二叉查找树的缺陷，因为二叉查找树在某些情况下会退化成一个线程结构。
 
 
-### <p id="1.5">HashMap的工作原理是什么？</p>
+### <p id="1.5">HashMap 的工作原理是什么？</p>
 
-HashMap是基于Hashing（散列法）的原理，以键值对（key-value）的形式存储元素的，我们使用put（key, value）存储对象到HashMap中，使用get（key）从HashMap中获取对象。
+HashMap 是基于 Hashing（散列法）的原理，以键值对（key-value）的形式存储元素的，我们使用put（key, value）存储对象到HashMap中，使用 get（key）从 HashMap 中获取对象。 
 
-mark：**HashMap的键值对也叫作Entry，而每个Entry都是存储在数组当中，因此这个数组就是HashMap的主干。**
+mark：**HashMap 的键值对也叫作 Entry，而每个 Entry 都是存储在数组当中，因此这个数组就是 HashMap 的主干。**
 
-它需要一个hash函数，使用HashCode()和equals()方法来向集合/从集合添加和检索元素。
+它需要一个 hash 函数，使用 HashCode() 和 equals() 方法来向集合/从集合添加和检索元素。
 
-它需要一个hash函数，使用 hashCode()和 equals()方法来向集合/从集合添加和检索元素。
+它需要一个 hash 函数，使用 hashCode() 和 equals() 方法来向集合/从集合添加和检索元素。
 
-当调用 put()方法的时候，HashMap会计算 key 的 hash 值，然后把键值对存储在集合中合适的索引上。如果 key 已经存在了，value 会被更新成新值。
+当调用 put() 方法的时候，HashMap会计算 key 的 hash 值，然后把键值对存储在集合中合适的索引上。如果 key 已经存在了，value 会被更新成新值。
 
-HashMap数组中的每一个元素的初始值都是NULL。
+HashMap 数组中的每一个元素的初始值都是 NULL。
 
-![HashMap底层图](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxY6VqqnKiaPFzAY7lzTR0ibJ0ZYH8FBgaJibvkZuLje5R02tfkycx9hBCSQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![HashMap 底层图](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxY6VqqnKiaPFzAY7lzTR0ibJ0ZYH8FBgaJibvkZuLje5R02tfkycx9hBCSQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 HashMap 的一些重要的特性是它的容量(capacity)，负载因子(load factor)和扩容极限(threshold resizing)。
 
-**1、Put方法的实现原理**
+**1、Put 方法的实现原理**
 
-HaspMap的一种重要的方法是put()方法，当我们调用put()方法时，比如hashMap.put("Java",0)，此时要插入一个Key值为“Java”的元素，这时首先需要一个Hash函数来确定这个Entry的插入位置，设为index，即 index = hash("Java")，假设求出的index值为2，那么这个Entry就会插入到数组索引为2的位置。
+HaspMap 的一种重要的方法是 put() 方法，当我们调用 put() 方法时，比如 hashMap.put("Java",0)，此时要插入一个 Key 值为“Java”的元素，这时首先需要一个 Hash 函数来确定这个 Entry 的插入位置，设为 index，即 index = hash("Java")，假设求出的 index 值为 2，那么这个 Entry 就会插入到数组索引为 2 的位置。
 
 ![HashMap底层实现图](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYwhC0MG4ffIuQyDrTGD3DQicjJSA7stCs5dibictrrdKSQz4K0cyJJXLEA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
-但是HaspMap的长度肯定是有限的，当插入的Entry越来越多时，不同的Key值通过哈希函数算出来的index值肯定会有冲突，此时就可以利用链表来解决。
+但是 HaspMap 的长度肯定是有限的，当插入的 Entry 越来越多时，不同的 Key 值通过哈希函数算出来的 index 值肯定会有冲突，此时就可以利用链表来解决。
 
-其实HaspMap数组的每一个元素不止是一个Entry对象，也是一个链表的头节点，每一个Entry对象通过Next指针指向下一个Entry对象，这样，当新的Entry的hash值与之前的存在冲突时，只需要插入到对应点链表即可。
+其实HaspMap数组的每一个元素不止是一个 Entry 对象，也是一个链表的头节点，每一个 Entry 对象通过 Next 指针指向下一个 Entry 对象，这样，当新的 Entry 的 hash 值与之前的存在冲突时，只需要插入到对应点链表即可。
 
-![HashMap底层实现](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYK3mAjodJUHmppFic15HKss9mg2BpLNRvR001PiaPyiaRvbpBpKVKfSMkA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![HashMap 底层实现](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYK3mAjodJUHmppFic15HKss9mg2BpLNRvR001PiaPyiaRvbpBpKVKfSMkA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
-需要注意的是，新来的Entry节点采用的是“头插法”，而不是直接插入在链表的尾部，这是因为HashMap的发明者认为，新插入的节点被查找的可能性更大。
+需要注意的是，新来的 Entry 节点采用的是“头插法”，而不是直接插入在链表的尾部，这是因为 HashMap 的发明者认为，新插入的节点被查找的可能性更大。
 
-**2、Get方法的实现原理**
+**2、Get 方法的实现原理**
 
-get()方法用来根据Key值来查找对应点Value，当调用get()方法时，比如hashMap.get("apple")，这时同样要对Key值做一次Hash映射，算出其对应的index值，即index = hash("apple")。
+get() 方法用来根据 Key 值来查找对应点 Value，当调用 get() 方法时，比如 hashMap.get("apple")，这时同样要对 Key 值做一次 Hash 映射，算出其对应的 index 值，即 index = hash("apple")。
 
-前面说到的可能存在Hash冲突，同一个位置可能存在多个Entry，这时就要从对应链表的头节点开始，一个个向下查找，直到找到对应的Key值，这样就获得到了所要查找的键值对。
+前面说到的可能存在 Hash 冲突，同一个位置可能存在多个 Entry，这时就要从对应链表的头节点开始，一个个向下查找，直到找到对应的 Key 值，这样就获得到了所要查找的键值对。
 
-例如假设我们要找的Key值是"apple"：
+例如假设我们要找的 Key 值是"apple"：
 
-![HashMap底层实现](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYIqoia9pPQUB85E9UYA75j9vHIL2OGVg6qTN3EyaxCdL6nABWbs74tEw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![HashMap 底层实现](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYIqoia9pPQUB85E9UYA75j9vHIL2OGVg6qTN3EyaxCdL6nABWbs74tEw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
-第一步，算出Key值“apple”的hash值，假设为2。
+第一步，算出 Key值“apple”的 hash 值，假设为 2。
 
-第二步，在数组中查找索引为2的位置，此时找到头节点为Entry6，Entry6的Key值是banana，不是我们要找的值。
+第二步，在数组中查找索引为2的位置，此时找到头节点为 Entry6，Entry6 的 Key 值是 banana，不是我们要找的值。
 
-第三步，查找Entry6的Next节点，这里为Entry1，它的Key值为apple，是我们要查找的值，这样就找到了对应的键值对，结束。
-
-
-### <p id="1.6">HashMap什么时候进行扩容呢？</p>
-
-当HashMap中的元素个数超过数组大小*loadFactor时，就会进行数组扩容，loadFactor的默认值为0.75。
-
-也就是说，默认情况下，数组大小为16，那么当hashmap中元素个数超过 16*0.75=12 的时候，就把数组的大小扩展为 2*16=32，即扩大一倍。
-
-然后重新计算每个元素在数组中的位置，而这是一个非常消耗性能的操作，所以如果我们已经预知hashmap中元素的个数，那么预设元素的个数能够有效的提高hashmap的性能。
-
-比如说，我们有1000个元素new HashMap(1000)，但是理论上来讲new HashMap(1024)更合适，不过上面已经说过，即使是1000，hashmap也自动会将其设置为1024。
-
-但是new HashMap(1024)还不是更合适的，因为0.75*1000 < 1000，也就是说为了让0.75 * size > 1000，我们必须这样new HashMap(2048)才最合适，既考虑了 & 的问题，也避免了 resize 的问题。
-
-**resize：原数组中的数据必须重新计算其在新数组中的位置，并放进去，这就是resize**
+第三步，查找 Entry6 的 Next 节点，这里为 Entry1，它的 Key 值为 apple，是我们要查找的值，这样就找到了对应的键值对，结束。
 
 
-### <p id="1.7">List、Map、Set三个接口，存取元素时，各有什么特点？</p>
+### <p id="1.6">HashMap 什么时候进行扩容呢？</p>
 
-List与Set都是单列元素的集合，它们有一个功共同的父接口Collection。
+当 HashMap 中的元素个数超过 数组大小 * loadFactor 时，就会进行数组扩容，loadFactor 的默认值为 0.75。
 
-**Set里面不允许有重复的元素**
+也就是说，默认情况下，数组大小为 16，那么当 HashMap 中元素个数超过 16*0.75=12 的时候，就把数组的大小扩展为 2*16=32，即扩大一倍。
 
-存元素：add方法有一个boolean的返回值，当集合中没有某个元素，此时add方法可成功加入该元素时，则返回true；当集合含有与某个元素equals相等的元素时，此时add方法无法加入该元素，返回结果为false。
+然后重新计算每个元素在数组中的位置，而这是一个非常消耗性能的操作，所以如果我们已经预知 HashMap 中元素的个数，那么预设元素的个数能够有效的提高 HashMap 的性能。
 
-取元素：没法说取第几个，只能以Iterator接口取得所有的元素，再逐一遍历各个元素。
+比如说，我们有 1000 个元素 new HashMap(1000)，但是理论上来讲 new HashMap(1024) 更合适，不过上面已经说过，即使是 1000，HashMap 也自动会将其设置为 1024。
 
-**List表示有先后顺序的集合**
+但是 new HashMap(1024) 还不是更合适的，因为 0.75*1000 < 1000，也就是说为了让 0.75 * size > 1000，我们必须这样 new HashMap(2048) 才最合适，既考虑了 & 的问题，也避免了 resize 的问题。
 
-存元素：多次调用add(Object)方法时，每次加入的对象按先来后到的顺序排序，也可以插队，即调用add(int index,Object)方法，就可以指定当前对象在集合中的存放位置。
+**resize：原数组中的数据必须重新计算其在新数组中的位置，并放进去，这就是 resize**
 
-取元素：方法1：Iterator接口取得所有，逐一遍历各个元素。方法2：调用get(index i)来明确说明取第几个。
 
-**Map是双列的集合**
+### <p id="1.7">List、Map、Set 三个接口，存取元素时，各有什么特点？</p>
 
-存放用put方法：put(obj key，obj value)，每次存储时，要存储一对key/value，不能存储重复的 key，这个重复的规则也是按 equals 比较相等。
+List 与 Set 都是单列元素的集合，它们有一个功共同的父接口 Collection。
+
+**Set 里面不允许有重复的元素**
+
+存元素：add 方法有一个 boolean 的返回值，当集合中没有某个元素，此时add方法可成功加入该元素时，则返回 true；当集合含有与某个元素 equals 相等的元素时，此时 add 方法无法加入该元素，返回结果为 false。
+
+取元素：没法说取第几个，只能以 Iterator 接口取得所有的元素，再逐一遍历各个元素。
+
+**List 表示有先后顺序的集合**
+
+存元素：多次调用 add(Object) 方法时，每次加入的对象按先来后到的顺序排序，也可以插队，即调用 add(int index,Object) 方法，就可以指定当前对象在集合中的存放位置。
 
 取元素：
 
-1、用 get(Object key) 方法根据 key 获得相应的 value。
+1. Iterator 接口取得所有，逐一遍历各个元素。
 
-2、也可以获得所有的 key 的集合，还可以获得所有的 value 的集合。
+2. 调用 get(index i) 来明确说明取第几个。
 
-3、还可以获得key和value组合成的 Map.Entry 对象的集合。
+**Map 是双列的集合**
+
+存放用 put 方法：put(obj key，obj value)，每次存储时，要存储一对 key/value，不能存储重复的 key，这个重复的规则也是按 equals 比较相等。
+
+取元素：
+
+1. 用 get(Object key) 方法根据 key 获得相应的 value。
+
+2. 也可以获得所有的 key 的集合，还可以获得所有的 value 的集合。
+
+3. 还可以获得key和value组合成的 Map.Entry 对象的集合。
 
 
 * List 以特定次序来持有元素，可有重复元素。
 
 * Set 无法拥有重复元素，内部排序。
 
-* Map 保存key-value值，value可多值。
+* Map 保存 key-value 值，value 可多值。
 
 
 ### <p id="1.8">Set 里的元素是不能重复的，那么用什么方法来区分重复与否呢？是用 == 还是 equals()？它们有何区别？</p>
