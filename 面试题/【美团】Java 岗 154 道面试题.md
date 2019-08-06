@@ -10,13 +10,13 @@
 
 4. <a href="#1.4">HashMap 的数据结构。</a>
 
-5. HashMap 的工作原理是什么?
+5. <a href="#1.5">HashMap 的工作原理是什么？</a>
 
-6. Hashmap 什么时候进行扩容呢？
+6. <a href="#1.6">Hashmap 什么时候进行扩容呢？</a>
 
-7. List、Map、Set 三个接口，存取元素时，各有什么特点？
+7. <a href="#1.7">List、Map、Set 三个接口，存取元素时，各有什么特点？</a>
 
-8. Set 里的元素是不能重复的，那么用什么方法来区分重复与否呢? 是用 == 还是 equals()? 它们有何区别?
+8. <a href="#1.8">Set 里的元素是不能重复的，那么用什么方法来区分重复与否呢？ 是用 == 还是 equals()? 它们有何区别？</a>
 
 9. 两个对象值相同 (x.equals(y) == true)，但却可有不同的 hash code，这句话对不对?
 
@@ -434,9 +434,122 @@ static int hash(int h) {
 
 ### <p id="1.5">HashMap的工作原理是什么？</p>
 
+HashMap是基于Hashing（散列法）的原理，以键值对（key-value）的形式存储元素的，我们使用put（key, value）存储对象到HashMap中，使用get（key）从HashMap中获取对象。
+
+mark：**HashMap的键值对也叫作Entry，而每个Entry都是存储在数组当中，因此这个数组就是HashMap的主干。**
+
+它需要一个hash函数，使用HashCode()和equals()方法来向集合/从集合添加和检索元素。
+
+它需要一个hash函数，使用 hashCode()和 equals()方法来向集合/从集合添加和检索元素。
+
+当调用 put()方法的时候，HashMap会计算 key 的 hash 值，然后把键值对存储在集合中合适的索引上。如果 key 已经存在了，value 会被更新成新值。
+
+HashMap数组中的每一个元素的初始值都是NULL。
+
+![HashMap底层图](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxY6VqqnKiaPFzAY7lzTR0ibJ0ZYH8FBgaJibvkZuLje5R02tfkycx9hBCSQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+HashMap 的一些重要的特性是它的容量(capacity)，负载因子(load factor)和扩容极限(threshold resizing)。
+
+**1、Put方法的实现原理**
+
+HaspMap的一种重要的方法是put()方法，当我们调用put()方法时，比如hashMap.put("Java",0)，此时要插入一个Key值为“Java”的元素，这时首先需要一个Hash函数来确定这个Entry的插入位置，设为index，即 index = hash("Java")，假设求出的index值为2，那么这个Entry就会插入到数组索引为2的位置。
+
+![HashMap底层实现图](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYwhC0MG4ffIuQyDrTGD3DQicjJSA7stCs5dibictrrdKSQz4K0cyJJXLEA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+但是HaspMap的长度肯定是有限的，当插入的Entry越来越多时，不同的Key值通过哈希函数算出来的index值肯定会有冲突，此时就可以利用链表来解决。
+
+其实HaspMap数组的每一个元素不止是一个Entry对象，也是一个链表的头节点，每一个Entry对象通过Next指针指向下一个Entry对象，这样，当新的Entry的hash值与之前的存在冲突时，只需要插入到对应点链表即可。
+
+![HashMap底层实现](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYK3mAjodJUHmppFic15HKss9mg2BpLNRvR001PiaPyiaRvbpBpKVKfSMkA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+需要注意的是，新来的Entry节点采用的是“头插法”，而不是直接插入在链表的尾部，这是因为HashMap的发明者认为，新插入的节点被查找的可能性更大。
+
+**2、Get方法的实现原理**
+
+get()方法用来根据Key值来查找对应点Value，当调用get()方法时，比如hashMap.get("apple")，这时同样要对Key值做一次Hash映射，算出其对应的index值，即index = hash("apple")。
+
+前面说到的可能存在Hash冲突，同一个位置可能存在多个Entry，这时就要从对应链表的头节点开始，一个个向下查找，直到找到对应的Key值，这样就获得到了所要查找的键值对。
+
+例如假设我们要找的Key值是"apple"：
+
+![HashMap底层实现](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYIqoia9pPQUB85E9UYA75j9vHIL2OGVg6qTN3EyaxCdL6nABWbs74tEw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+第一步，算出Key值“apple”的hash值，假设为2。
+
+第二步，在数组中查找索引为2的位置，此时找到头节点为Entry6，Entry6的Key值是banana，不是我们要找的值。
+
+第三步，查找Entry6的Next节点，这里为Entry1，它的Key值为apple，是我们要查找的值，这样就找到了对应的键值对，结束。
+
+
 ### <p id="1.6">HashMap什么时候进行扩容呢？</p>
 
+当HashMap中的元素个数超过数组大小*loadFactor时，就会进行数组扩容，loadFactor的默认值为0.75。
+
+也就是说，默认情况下，数组大小为16，那么当hashmap中元素个数超过 16*0.75=12 的时候，就把数组的大小扩展为 2*16=32，即扩大一倍。
+
+然后重新计算每个元素在数组中的位置，而这是一个非常消耗性能的操作，所以如果我们已经预知hashmap中元素的个数，那么预设元素的个数能够有效的提高hashmap的性能。
+
+比如说，我们有1000个元素new HashMap(1000)，但是理论上来讲new HashMap(1024)更合适，不过上面已经说过，即使是1000，hashmap也自动会将其设置为1024。
+
+但是new HashMap(1024)还不是更合适的，因为0.75*1000 < 1000，也就是说为了让0.75 * size > 1000，我们必须这样new HashMap(2048)才最合适，既考虑了 & 的问题，也避免了 resize 的问题。
+
+**resize：原数组中的数据必须重新计算其在新数组中的位置，并放进去，这就是resize**
+
+
 ### <p id="1.7">List、Map、Set三个接口，存取元素时，各有什么特点？</p>
+
+List与Set都是单列元素的集合，它们有一个功共同的父接口Collection。
+
+**Set里面不允许有重复的元素**
+
+存元素：add方法有一个boolean的返回值，当集合中没有某个元素，此时add方法可成功加入该元素时，则返回true；当集合含有与某个元素equals相等的元素时，此时add方法无法加入该元素，返回结果为false。
+
+取元素：没法说取第几个，只能以Iterator接口取得所有的元素，再逐一遍历各个元素。
+
+**List表示有先后顺序的集合**
+
+存元素：多次调用add(Object)方法时，每次加入的对象按先来后到的顺序排序，也可以插队，即调用add(int index,Object)方法，就可以指定当前对象在集合中的存放位置。
+
+取元素：方法1：Iterator接口取得所有，逐一遍历各个元素。方法2：调用get(index i)来明确说明取第几个。
+
+**Map是双列的集合**
+
+存放用put方法：put(obj key，obj value)，每次存储时，要存储一对key/value，不能存储重复的key，这个重复的规则也是按equals比较相等。
+
+取元素：1、用get(Object key)方法根据key获得相应的value。2、也可以获得所有的key的集合，还可以获得所有的value的集合。3、还可以获得key和value组合成的Map.Entry对象的集合。
+
+List以特定次序来持有元素，可有重复元素。Set 无法拥有重复元素，内部排序。Map 保存key-value值，value可多值。
+
+
+### <p id="1.8">Set里的元素是不能重复的，那么用什么方法来区分重复与否呢？是用==还是equals()？它们有何区别？</p>
+
+Set 里的元素是不能重复的，元素重复与否是使用 equals()方法进行判断的。
+
+equals()和==方法决定引用值是否指向同一对象，equals()在类中被覆盖，为的是当两个分离的对象的内容和类型相配的话，返回真值。
+
+**equals（）和 == 的区别**
+
+==操作符专门用来比较两个变量的值是否相等，也就是用于比较变量所对应的内存中所存储的数值是否相同，要比较两个基本类型的数据或两个引用变量是否相等，只能用==操作符。
+
+如果一个变量指向的数据是对象类型的，那么，这时候涉及了两块内存， 对象本身占用一块内存（堆内存），变量也占用一块内存。
+
+例如 Objet obj = new Object()；变量 obj 是一个内存，new Object()是另一个内存，此时，变量 obj 所对应的内存中存储的数值就是对象占用的那块内存的首地址。
+
+对于指向对象类型的变量，如果要比较两个变量是否指向同一个对象，即要看这两个变量所对应的内存中的数值是否相等，这时候就需要用==操作符进行比较。
+
+equals 方法是用于比较两个独立对象的内容是否相同，就好比去比较两个人的长相是否相同，它比较的两个对象是独立的。
+
+**▌总结**
+
+**==**
+
+基本类型：比较的是值是否相同
+
+引用类型：比较的是地址值是否相同
+
+**equals（）**
+
+引用类型：默认情况下，比较的是地址值，可进行重写，比较的是对象的成员变量值是否相同。
 
 
 
