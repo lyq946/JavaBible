@@ -19,4 +19,4 @@
 6. OAuth 2.0
  
 
-参考地址：https://coolshell.cn/articles/19395.html
+摘录自：https://coolshell.cn/articles/19395.html
