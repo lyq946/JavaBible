@@ -18,11 +18,11 @@
 
 8. <a href="#1.8">Set 里的元素是不能重复的，那么用什么方法来区分重复与否呢？ 是用 == 还是 equals()? 它们有何区别？</a>
 
-9. 两个对象值相同 (x.equals(y) == true)，但却可有不同的 hash code，这句话对不对?
+9. <a href="#1.9">两个对象值相同 (x.equals(y) == true)，但却可有不同的 hash code，这句话对不对？</a>
 
-10. heap 和 stack 有什么区别。
+10. <a href="#1.10">heap 和 stack 有什么区别。</a>
 
-11. Java 集合类框架的基本接口有哪些？
+11. <a href="#1.11">Java 集合类框架的基本接口有哪些？</a>
 
 12. HashSet 和 TreeSet 有什么区别？
 
