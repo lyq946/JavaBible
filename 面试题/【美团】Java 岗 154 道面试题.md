@@ -20,7 +20,7 @@
 
 9. <a href="#1.9">两个对象值相同 (x.equals(y) == true)，但却可有不同的 hash code，这句话对不对？</a>
 
-10. <a href="#1.10">heap 和 stack 有什么区别。</a>
+10. <a href="#1.10">Heap 和 Stack 有什么区别。</a>
 
 11. <a href="#1.11">Java 集合类框架的基本接口有哪些？</a>
 
@@ -606,7 +606,7 @@ Java 对于 equals 方法和 hashCode 方法是这样规定的：
 6. 不要将 equals 方法参数中的 Object 对象替换为其他的类型，在重写时不要忘记 @Override 注解。
 
 
-### <p id="1.10">10、heap 和 stack 有什么区别</p>
+### <p id="1.10">10、Heap 和 Stack 有什么区别</p>
 
 **堆栈的概念：堆栈是两种数据结构。**
 
