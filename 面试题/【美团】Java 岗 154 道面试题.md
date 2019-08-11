@@ -437,7 +437,7 @@ static int hash(int h) {
 > TreeMap、TreeSet 以及 JDK1.8 之后的 HashMap 底层都用了红黑树。红黑树就是为了解决二叉查找树的缺陷，因为二叉查找树在某些情况下会退化成一个线程结构。
 
 
-### <p id="1.5">HashMap 的工作原理是什么？</p>
+### <p id="1.5">5、HashMap 的工作原理是什么？</p>
 
 HashMap 是基于 Hashing（散列法）的原理，以键值对（key-value）的形式存储元素的，我们使用put（key, value）存储对象到HashMap中，使用 get（key）从 HashMap 中获取对象。 
 
@@ -503,7 +503,7 @@ HaspMap 的一种重要的方法是 put() 方法，当我们调用 put() 方法�
  第三步，查找 Entry6 的 Next 节点，这里为 Entry1，它的 Key 值为 apple，是我们要查找的值，这样就找到了对应的键值对，结束。	
 
 
- ### <p id="1.6">HashMap 什么时候进行扩容呢？</p>	
+ ### <p id="1.6">6、HashMap 什么时候进行扩容呢？</p>	
 
  当 HashMap 中的元素个数超过 数组大小 * loadFactor 时，就会进行数组扩容，loadFactor 的默认值为 0.75。	
 
@@ -518,7 +518,7 @@ HaspMap 的一种重要的方法是 put() 方法，当我们调用 put() 方法�
  **resize：原数组中的数据必须重新计算其在新数组中的位置，并放进去，这就是 resize**	
 
 
- ### <p id="1.7">List、Map、Set 三个接口，存取元素时，各有什么特点？</p>	
+ ### <p id="1.7">7、List、Map、Set 三个接口，存取元素时，各有什么特点？</p>	
 
  List 与 Set 都是单列元素的集合，它们有一个功共同的父接口 Collection。	
 
@@ -558,7 +558,7 @@ HaspMap 的一种重要的方法是 put() 方法，当我们调用 put() 方法�
  * Map 保存 key-value 值，value 可多值。	
 
 
- ### <p id="1.8">Set 里的元素是不能重复的，那么用什么方法来区分重复与否呢？是用 == 还是 equals()？它们有何区别？</p>	
+ ### <p id="1.8">8、Set 里的元素是不能重复的，那么用什么方法来区分重复与否呢？是用 == 还是 equals()？它们有何区别？</p>	
 
  Set 里的元素是不能重复的，元素重复与否是使用 equals() 方法进行判断的。	
 
