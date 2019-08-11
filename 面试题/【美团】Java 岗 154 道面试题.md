@@ -24,7 +24,7 @@
 
 11. <a href="#1.11">Java 集合类框架的基本接口有哪些？</a>
 
-12. HashSet 和 TreeSet 有什么区别？
+12. <a href="#1.12">HashSet 和 TreeSet 有什么区别？</a>
 
 13. HashSet 的底层实现是什么?
 
