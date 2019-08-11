@@ -457,214 +457,29 @@ HashMap 的一些重要的特性是它的容量(capacity)，负载因子(load fa
 
 **1、Put 方法的实现原理**
 
-HaspMap 的一种重要的方法是 put() 方法，当我们调用 put() 方法时，比如 hashMap.put("Java",0)，此时要插入一个 Key 值为“Java”的元素，这时首先需要一个 Hash 函数来确定这个 Entry 的插入位置，设为 index，即 index = hash("Java")，假设求出的 index 值为 2，那么这个 Entry 就会插入到数组索引为 2 的位置。
+HaspMap 的一种重要的方法是 put() 方法，当我们调用 put() 方法时，比如 hashMap.put("Java",0)，此时要插入一个 Key 值为“Java”的元素，这时首先需要一个 Hash 函数来确定这个 Entry 的插入位置，设为 index，即 index = hash("Java")，假设求出的 index 值为 2，那么这个 Entry 就会插入到数组索引为 2 的位置
 
-![HashMap底层实现图](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYwhC0MG4ffIuQyDrTGD3DQicjJSA7stCs5dibictrrdKSQz4K0cyJJXLEA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
-但是 HaspMap 的长度肯定是有限的，当插入的 Entry 越来越多时，不同的 Key 值通过哈希函数算出来的 index 值肯定会有冲突，此时就可以利用链表来解决。
+### <p id="1.12">12、HashSet 和 TreeSet 有什么区别？</p>
 
-其实HaspMap数组的每一个元素不止是一个 Entry 对象，也是一个链表的头节点，每一个 Entry 对象通过 Next 指针指向下一个 Entry 对象，这样，当新的 Entry 的 hash 值与之前的存在冲突时，只需要插入到对应点链表即可。
+**相同点**：单例集合，数据不可重复
 
-![HashMap 底层实现](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYK3mAjodJUHmppFic15HKss9mg2BpLNRvR001PiaPyiaRvbpBpKVKfSMkA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+**不同点1**：底层使用的储存数据结构不同：
 
-需要注意的是，新来的 Entry 节点采用的是“头插法”，而不是直接插入在链表的尾部，这是因为 HashMap 的发明者认为，新插入的节点被查找的可能性更大。
+1、Hashset底层使用的是HashMap哈希表结构储存
 
-**2、Get 方法的实现原理**
+2、而Treeset底层用的是TreeMap树结构储存。
 
-get() 方法用来根据 Key 值来查找对应点 Value，当调用 get() 方法时，比如 hashMap.get("apple")，这时同样要对 Key 值做一次 Hash 映射，算出其对应的 index 值，即 index = hash("apple")。
+**不同点2**：储存的数据保存唯一方式不用。
 
-前面说到的可能存在 Hash 冲突，同一个位置可能存在多个 Entry，这时就要从对应链表的头节点开始，一个个向下查找，直到找到对应的 Key 值，这样就获得到了所要查找的键值对。
+1、Hashset是通过复写hashCode()方法和equals()方法来保证的。
 
-例如假设我们要找的 Key 值是"apple"：
+2、而Treeset是通过Compareable接口的compareto方法来保证的。
 
-![HashMap 底层实现](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYIqoia9pPQUB85E9UYA75j9vHIL2OGVg6qTN3EyaxCdL6nABWbs74tEw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+**不同点3**：hashset无序   Treeset有序
 
-第一步，算出 Key值“apple”的 hash 值，假设为 2。
+**储存原理**
 
-第二步，在数组中查找索引为2的位置，此时找到头节点为 Entry6，Entry6 的 Key 值是 banana，不是我们要找的值。
+hashset：底层数据结构是哈希表，本质就是哈希值储存。通过判断元素的hashcode方法和equals方法来保证元素的唯一性。当哈希值不同时就直接进行储存。如果相同，会判断一次equals方式是否返回为true ，如果是true 则视为用的同一个元素，不用再储存。如果是false，这俄格相同哈希值不同内容的元素会放在同一个桶里（当哈希表中有一个桶结构，每一个捅都有一个哈希值）。
 
-第三步，查找 Entry6 的 Next 节点，这里为 Entry1，它的 Key 值为 apple，是我们要查找的值，这样就找到了对应的键值对，结束。
-
-
-### <p id="1.6">HashMap 什么时候进行扩容呢？</p>
-
-当 HashMap 中的元素个数超过 数组大小 * loadFactor 时，就会进行数组扩容，loadFactor 的默认值为 0.75。
-
-也就是说，默认情况下，数组大小为 16，那么当 HashMap 中元素个数超过 16*0.75=12 的时候，就把数组的大小扩展为 2*16=32，即扩大一倍。
-
-然后重新计算每个元素在数组中的位置，而这是一个非常消耗性能的操作，所以如果我们已经预知 HashMap 中元素的个数，那么预设元素的个数能够有效的提高 HashMap 的性能。
-
-比如说，我们有 1000 个元素 new HashMap(1000)，但是理论上来讲 new HashMap(1024) 更合适，不过上面已经说过，即使是 1000，HashMap 也自动会将其设置为 1024。
-
-但是 new HashMap(1024) 还不是更合适的，因为 0.75*1000 < 1000，也就是说为了让 0.75 * size > 1000，我们必须这样 new HashMap(2048) 才最合适，既考虑了 & 的问题，也避免了 resize 的问题。
-
-**resize：原数组中的数据必须重新计算其在新数组中的位置，并放进去，这就是 resize**
-
-
-### <p id="1.7">List、Map、Set 三个接口，存取元素时，各有什么特点？</p>
-
-List 与 Set 都是单列元素的集合，它们有一个功共同的父接口 Collection。
-
-**Set 里面不允许有重复的元素**
-
-存元素：add 方法有一个 boolean 的返回值，当集合中没有某个元素，此时add方法可成功加入该元素时，则返回 true；当集合含有与某个元素 equals 相等的元素时，此时 add 方法无法加入该元素，返回结果为 false。
-
-取元素：没法说取第几个，只能以 Iterator 接口取得所有的元素，再逐一遍历各个元素。
-
-**List 表示有先后顺序的集合**
-
-存元素：多次调用 add(Object) 方法时，每次加入的对象按先来后到的顺序排序，也可以插队，即调用 add(int index,Object) 方法，就可以指定当前对象在集合中的存放位置。
-
-取元素：
-
-1. Iterator 接口取得所有，逐一遍历各个元素。
-
-2. 调用 get(index i) 来明确说明取第几个。
-
-**Map 是双列的集合**
-
-存放用 put 方法：put(obj key，obj value)，每次存储时，要存储一对 key/value，不能存储重复的 key，这个重复的规则也是按 equals 比较相等。
-
-取元素：
-
-1. 用 get(Object key) 方法根据 key 获得相应的 value。
-
-2. 也可以获得所有的 key 的集合，还可以获得所有的 value 的集合。
-
-3. 还可以获得key和value组合成的 Map.Entry 对象的集合。
-
-
-* List 以特定次序来持有元素，可有重复元素。
-
-* Set 无法拥有重复元素，内部排序。
-
-* Map 保存 key-value 值，value 可多值。
-
-
-### <p id="1.8">Set 里的元素是不能重复的，那么用什么方法来区分重复与否呢？是用 == 还是 equals()？它们有何区别？</p>
-
-Set 里的元素是不能重复的，元素重复与否是使用 equals() 方法进行判断的。
-
-equals() 和 == 方法决定引用值是否指向同一对象，equals() 在类中被覆盖，为的是当两个分离的对象的内容和类型相配的话，返回真值。
-
-**equals（）和 == 的区别**
-
-== 操作符专门用来比较两个变量的值是否相等，也就是用于比较变量所对应的内存中所存储的数值是否相同，要比较两个基本类型的数据或两个引用变量是否相等，只能用 == 操作符。
-
-如果一个变量指向的数据是对象类型的，那么，这时候涉及了两块内存， 对象本身占用一块内存（堆内存），变量也占用一块内存。
-
-例如 Objet obj = new Object()；变量 obj 是一个内存，new Object()是另一个内存，此时，变量 obj 所对应的内存中存储的数值就是对象占用的那块内存的首地址。
-
-对于指向对象类型的变量，如果要比较两个变量是否指向同一个对象，即要看这两个变量所对应的内存中的数值是否相等，这时候就需要用==操作符进行比较。
-
-equals 方法是用于比较两个独立对象的内容是否相同，就好比去比较两个人的长相是否相同，它比较的两个对象是独立的。
-
-**总结**
-
-**==**
-
-基本类型：比较的是值是否相同
-
-引用类型：比较的是地址值是否相同
-
-**equals（）**
-
-引用类型：默认情况下，比较的是地址值，可进行重写，比较的是对象的成员变量值是否相同。
-
-
-### <p id="1.9">9、两个对象值相同（x.equals(y) == true），但却可有不同的 hash code，这句话对不对？</p>
-
-不对，如果两个对象 x 和 y 满足 x.equals(y) == true，它们的哈希码（hashCode）应当相同。
-
-Java 对于 equals 方法和 hashCode 方法是这样规定的：
-
-1）如果两个对象相同（equals 方法返回 true），那么它们的 hashCode 值一定要相同；
-
-2）如果两个对象的 hashCode 相同，它们并不一定相同。
-
-当然，你未必要按照要求去做，但是如果你违背了上述原则就会发现在使用容器时，相同的对象可以出现在 Set 集合中，同时增加新元素的效率也会大大下降（对于是哟个哈希存储的系统，如果哈希码频繁的冲突将会造成存取性能极具下降）。
-
-首先 equals 方法必须满足：
-
-+ 自反性（x.equals(x) 必须返回 true）
-+ 对称性（x.equals(y) 返回 true 时，y.equals(x) 也必须返回 true）
-+ 传递性（x.equals(y) 和 y.equals(z) 都返回 true 时，x.equals(z) 也必须返回 true）
-+ 一致性（当 x 和 y 引用的对象信息没有被修改时，多次调用 x.equals(y)应该得到同样的返回值），而且对于任何非 null 值得引用 x，x.equals(null)必须返回false。
-
-实现高质量得 equals 方法得诀窍包括：
-
-1. 使用 == 操作符检查 “参数是否为这个对象得引用”；
-
-2. 使用 instanceof 操作符检查 “参数是否为正确得类型”；
-
-3. 对于类中得关键属性，检查参数传入对象的属性是否与之相匹配；
-
-4. 编写完 equals 方法后，问自己它是否满足对称性、传递性、一致性；
-
-5. 重写 equals 时总是要重写 hashCode；
-
-6. 不要将 equals 方法参数中的 Object 对象替换为其他的类型，在重写时不要忘记 @Override 注解。
-
-
-### <p id="1.10">10、Heap 和 Stack 有什么区别</p>
-
-**堆栈的概念：堆栈是两种数据结构。**
-
-堆栈都是一种数据项按序排列的数据结构，只能在一端（称为栈顶（top））对数据项进行插入和删除。
-
-在单片机应用中，堆栈是个特殊的存储区，主要功能是暂时存放数据和地址，通常用来保护断点和现场。
-
-要点：
-
-+ 堆，队列优先，先进先出（FIFO - first in first out）。
-
-+ 栈，先进后出（FILO - first in last out）。
-
-**Java中栈和堆的区别**
-
-栈(stack)与堆(heap)都是Java用来在Ram中存放数据的地方。与C++不同，Java自动管理栈和堆，程序员不能直接地设置栈或堆。 
-
-在函数中定义的一些基本类型的变量和对象的引用变量都在函数的栈内存中分配。
-
-当在一段代码块定义一个变量时，Java就在栈中为这个变量分配内存空间，当超过变量的作用域后，Java会自动释放掉为该变量所分配的内存空间，该内存空间可以立即被另作他用。 
-
-堆内存用来存放由new创建的对象和数组，在堆中分配的内存，由Java虚拟机的自动垃圾回收器来管理。
-
-在堆中产生了一个数组或对象后，还可以在栈中定义一个特殊的变量，让栈中这个变量的取值等于数组或对象在堆内存中的首地址，栈中的这个变量就成了数组或对象的引用变量。
-
-引用变量就相当于是为数组或对象起的一个名称，以后就可以在程序中使用栈中的引用变量来访问堆中的数组或对象。 
-
-
-### <p id="1.11">Java 集合类框架的基本接口有哪些？</p>
-
-总共有两大接口：Collection 和Map ，一个元素集合，一个是键值对集合；
-
-其中List和Set接口继承了Collection接口，一个是有序元素集合，一个是无序元素集合； 
-
-而ArrayList和 LinkedList 实现了List接口，HashSet实现了Set接口，这几个都比较常用； 
-
-HashMap 和HashTable实现了Map接口，并且HashTable是线程安全的，但是HashMap性能更好；
-
-Java集合类里最基本的接口有：
-
-+ Collection：单列集合的根接口
-
-+ List：元素有序  可重复 
-
-+ ArrayList：类似一个长度可变的数组 。适合查询，不适合增删
-
-+ LinkedList：底层是双向循环链表。适合增删，不适合查询。
-
-+ Set：元素无序，不可重复
-
-+ HashSet：根据对象的哈希值确定元素在集合中的位置
-
-+ TreeSet: 以二叉树的方式存储元素，实现了对集合中的元素排序
-
-+ Map：双列集合的根接口，用于存储具有键（key）、值（value）映射关系的元素。
-
-+ HashMap：用于存储键值映射关系，不能出现重复的键key
-
-+ TreeMap：用来存储键值映射关系，不能出现重复的键key，所有的键按照二叉树的方式排列
-
-
+Treeset：底层数据结构式一个二叉树，可以对set集合中的元素进行排序，这种结构，可以提高排序性能。根据比较方法的返回值决定的，只要返回的是0，就代表元素重复。
