@@ -708,3 +708,23 @@ HaspMap 的一种重要的方法是 put() 方法，当我们调用 put() 方法�
 hashset：底层数据结构是哈希表，本质就是哈希值储存。通过判断元素的hashcode方法和equals方法来保证元素的唯一性。当哈希值不同时就直接进行储存。如果相同，会判断一次equals方式是否返回为true ，如果是true 则视为用的同一个元素，不用再储存。如果是false，这俄格相同哈希值不同内容的元素会放在同一个桶里（当哈希表中有一个桶结构，每一个捅都有一个哈希值）。
 
 Treeset：底层数据结构式一个二叉树，可以对set集合中的元素进行排序，这种结构，可以提高排序性能。根据比较方法的返回值决定的，只要返回的是0，就代表元素重复。
+
+
+### <p id="1.13">13、HashSet 的底层实现是什么？</p>
+
+众所周知，HashSet 里面存储的元素都具有无序性，标识唯一性，HashSet 里面大多数的内容都是在 HashMap 的基础上进行修改的。
+
+![HashSet源码](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasS8ZKbnvGm61XaWOyWZpxn9ZOibhOr3W0mD27BURnSicQLcibWXhiaEwlrF6lsS6NJqvHiaZvxIiaVlVYDw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+上图可以看出，HashSet 是通过将相应的内容存储在了一个 HashMap 里的 key 中，然后再去读取的。
+
+为了保证 HashSet 里面的数据唯一性，这里将 HashSet 存放的元素作为了 HashMap 里面唯一的 Key 变量，value 部分用了一个 PERSENT 对象来存储，也就是源码里面的这一句内容：
+
+```java
+private static final Object PRESENT = new Object();
+```
+
+其实 HashSet 底层的很多部分都是引用了 HashMap 来进行实现的。
+
+
+
