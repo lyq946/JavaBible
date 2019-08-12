@@ -26,7 +26,7 @@
 
 12. <a href="#1.12">HashSet 和 TreeSet 有什么区别？</a>
 
-13. HashSet 的底层实现是什么?
+13. <a href="#1.13">HashSet 的底层实现是什么？</a>
 
 14. LinkedHashMap 的实现原理?
 
