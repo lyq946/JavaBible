@@ -28,7 +28,7 @@
 
 13. <a href="#1.13">HashSet 的底层实现是什么？</a>
 
-14. LinkedHashMap 的实现原理?
+14. <a href="#1.14">LinkedHashMap 的实现原理？</a>
 
 15. 为什么集合类没有实现 Cloneable 和 Serializable 接口？
 
@@ -725,6 +725,34 @@ private static final Object PRESENT = new Object();
 ```
 
 其实 HashSet 底层的很多部分都是引用了 HashMap 来进行实现的。
+
+
+### <p id="1.14">14、LinkedHashMap 的实现原理？</p>
+
+LinkedHashMap 是 Map 接口的哈希表和链接列表实现，具有可预知的迭代顺序。此实现提供所有可选的映射操作，并允许使用 null 值和 null 键，但不保证映射的顺序，特别是它不保证该顺序恒久不变。
+
+LinkedHashMap 实现与 HashMap 的不同之处在于，后者维护着一个运行于所有条目的双重链接列表。此链接列表定义了迭代顺序，该迭代顺序可以是插入顺序或者是访问顺序。
+
+注意，此实现不是同步的。如果多个线程同时访问链接的哈希映射，而其中至少一个线程从结构上修改了该映射，则它必须保持外部同步。
+
+对于 LinkedHashMap 而言，它继承与 HashMap、底层使用哈希表与双向链表来保存所有元素。其基本操作与父类 HashMap 相似，它通过重写父类相关的方法，来实现自己的链接列表特性。
+
+来看一个简单的 LinkedHashMap 程序：
+
+![LinkedHashMap程序](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQ7x28FWiaVVTVV52xgrW2ibbPEGVFpQBTjduxPQt4f5CEAskBZ3v2VIGoGykEJpV07iamBzJIVnK4sw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+运行结果是：
+
+![运行结果](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQ7x28FWiaVVTVV52xgrW2ibbSNBwQs8NXhXHaCj752HbQBYJf0hFMnxogib0XfgdFm0Q18wo20mEcNQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+我们可以观察到，和 HashMap 的运行结果不同，LinkedHashMap 的迭代输出的结果保持了插入顺序。
+
+是什么样的结构使得 LinkedHashMap 具有如此特性呢？
+
+我们还是一样的看看 LinkedHashMap 的内部结构，对它有一个感性的认识：
+
+![LinkedHashMap 内部结构](https://mmbiz.qpic.cn/mmbiz_jpg/ABIWtj6YasQ7x28FWiaVVTVV52xgrW2ibbvuQESWAKua7PO3tlg07lOhfhF8K63Bv6Ban68TxzDqYEibbs0sicfYxA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
 
 
 
