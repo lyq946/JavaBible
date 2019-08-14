@@ -30,7 +30,7 @@
 
 14. <a href="#1.14">LinkedHashMap 的实现原理？</a>
 
-15. 为什么集合类没有实现 Cloneable 和 Serializable 接口？
+15. <a href="#1.15">为什么集合类没有实现 Cloneable 和 Serializable 接口？</a>
 
 16. 什么是迭代器 (Iterator)？
 
@@ -752,6 +752,25 @@ LinkedHashMap 实现与 HashMap 的不同之处在于，后者维护着一个运
 我们还是一样的看看 LinkedHashMap 的内部结构，对它有一个感性的认识：
 
 ![LinkedHashMap 内部结构](https://mmbiz.qpic.cn/mmbiz_jpg/ABIWtj6YasQ7x28FWiaVVTVV52xgrW2ibbvuQESWAKua7PO3tlg07lOhfhF8K63Bv6Ban68TxzDqYEibbs0sicfYxA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+
+### <p id="1.15">15、为什么集合类没有实现 Cloneable 和 Serializable 接口？</p>
+
+克隆（cloning）或者序列化（serialization）的语义和含义是跟具体的实现相关的。因此应该由集合类的具体实现类来决定如何被克隆或者序列化。
+
+1）什么是克隆？
+
+克隆是把一个对象里面的属性值，复制给另外一个对象，而不是对象引用的复制。
+
+2）实现 Serializable 序列化的作用
+
+1、将对象的状态保存在存储媒体中，以便在重写时创建出完全相同的副本
+
+2、按值将对象从一个应用程序域发向另一个应用程序域
+
+实现 Serializable 接口的作用就是可以把对象存到字节流，然后可以恢复。
+
+所以对象没有序列化，怎么能在网络传输呢？**要网络传输就得转为字节流**，在分布式应用中，你就得实现序列化。如果不需要分布式引用，那就没必要实现序列化。
 
 
 
