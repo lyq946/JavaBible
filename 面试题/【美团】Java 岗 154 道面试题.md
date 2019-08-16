@@ -459,49 +459,43 @@ HashMap 的一些重要的特性是它的容量(capacity)，负载因子(load fa
 
 HaspMap 的一种重要的方法是 put() 方法，当我们调用 put() 方法时，比如 hashMap.put("Java",0)，此时要插入一个 Key 值为“Java”的元素，这时首先需要一个 Hash 函数来确定这个 Entry 的插入位置，设为 index，即 index = hash("Java")，假设求出的 index 值为 2，那么这个 Entry 就会插入到数组索引为 2 的位置
 
-
 **1、Put 方法的实现原理**	**1、Put 方法的实现原理**
-
 
  HaspMap 的一种重要的方法是 put() 方法，当我们调用 put() 方法时，比如 hashMap.put("Java",0)，此时要插入一个 Key 值为“Java”的元素，这时首先需要一个 Hash 函数来确定这个 Entry 的插入位置，设为 index，即 index = hash("Java")，假设求出的 index 值为 2，那么这个 Entry 就会插入到数组索引为 2 的位置。	HaspMap 的一种重要的方法是 put() 方法，当我们调用 put() 方法时，比如 hashMap.put("Java",0)，此时要插入一个 Key 值为“Java”的元素，这时首先需要一个 Hash 函数来确定这个 Entry 的插入位置，设为 index，即 index = hash("Java")，假设求出的 index 值为 2，那么这个 Entry 就会插入到数组索引为 2 的位置
 
-
  ![HashMap底层实现图](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYwhC0MG4ffIuQyDrTGD3DQicjJSA7stCs5dibictrrdKSQz4K0cyJJXLEA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)	
-
 
  但是 HaspMap 的长度肯定是有限的，当插入的 Entry 越来越多时，不同的 Key 值通过哈希函数算出来的 index 值肯定会有冲突，此时就可以利用链表来解决。	### <p id="1.12">12、HashSet 和 TreeSet 有什么区别？</p>
 
+ 其实HaspMap数组的每一个元素不止是一个 Entry 对象，也是一个链表的头节点，每一个 Entry 对象通过 Next 指针指向下一个 Entry 对象，这样，当新的 Entry 的 hash 值与之前的存在冲突时，只需要插入到对应点链表即可。	
+ 
+ **相同点**：单例集合，数据不可重复
 
- 其实HaspMap数组的每一个元素不止是一个 Entry 对象，也是一个链表的头节点，每一个 Entry 对象通过 Next 指针指向下一个 Entry 对象，这样，当新的 Entry 的 hash 值与之前的存在冲突时，只需要插入到对应点链表即可。	**相同点**：单例集合，数据不可重复
-
-
- ![HashMap 底层实现](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYK3mAjodJUHmppFic15HKss9mg2BpLNRvR001PiaPyiaRvbpBpKVKfSMkA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)	**不同点1**：底层使用的储存数据结构不同：
-
+ ![HashMap 底层实现](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYK3mAjodJUHmppFic15HKss9mg2BpLNRvR001PiaPyiaRvbpBpKVKfSMkA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)	
+ 
+ **不同点1**：底层使用的储存数据结构不同：
 
  需要注意的是，新来的 Entry 节点采用的是“头插法”，而不是直接插入在链表的尾部，这是因为 HashMap 的发明者认为，新插入的节点被查找的可能性更大。	1、Hashset底层使用的是HashMap哈希表结构储存
 
-
  **2、Get 方法的实现原理**	2、而Treeset底层用的是TreeMap树结构储存。
 
-
- get() 方法用来根据 Key 值来查找对应点 Value，当调用 get() 方法时，比如 hashMap.get("apple")，这时同样要对 Key 值做一次 Hash 映射，算出其对应的 index 值，即 index = hash("apple")。	**不同点2**：储存的数据保存唯一方式不用。
-
+ get() 方法用来根据 Key 值来查找对应点 Value，当调用 get() 方法时，比如 hashMap.get("apple")，这时同样要对 Key 值做一次 Hash 映射，算出其对应的 index 值，即 index = hash("apple")。
+ 
+ **不同点2**：储存的数据保存唯一方式不用。
 
  前面说到的可能存在 Hash 冲突，同一个位置可能存在多个 Entry，这时就要从对应链表的头节点开始，一个个向下查找，直到找到对应的 Key 值，这样就获得到了所要查找的键值对。	1、Hashset是通过复写hashCode()方法和equals()方法来保证的。
 
-
  例如假设我们要找的 Key 值是"apple"：	2、而Treeset是通过Compareable接口的compareto方法来保证的。
 
+ ![HashMap 底层实现](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYIqoia9pPQUB85E9UYA75j9vHIL2OGVg6qTN3EyaxCdL6nABWbs74tEw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)	
+ 
+ **不同点3**：hashset无序   Treeset有序
 
- ![HashMap 底层实现](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasQXzyRD5vxDpofr6eKevUxYIqoia9pPQUB85E9UYA75j9vHIL2OGVg6qTN3EyaxCdL6nABWbs74tEw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)	**不同点3**：hashset无序   Treeset有序
-
-
- 第一步，算出 Key值“apple”的 hash 值，假设为 2。	**储存原理**
+ 第一步，算出 Key值“apple”的 hash 值，假设为 2。	
 
  第二步，在数组中查找索引为2的位置，此时找到头节点为 Entry6，Entry6 的 Key 值是 banana，不是我们要找的值。	
 
  第三步，查找 Entry6 的 Next 节点，这里为 Entry1，它的 Key 值为 apple，是我们要查找的值，这样就找到了对应的键值对，结束。	
-
 
  ### <p id="1.6">6、HashMap 什么时候进行扩容呢？</p>	
 
