@@ -32,11 +32,11 @@
 
 15. <a href="#1.15">为什么集合类没有实现 Cloneable 和 Serializable 接口？</a>
 
-16. 什么是迭代器 (Iterator)？
+16. <a href="#1.16">什么是迭代器 (Iterator)？</a>
 
-17. Iterator 和 ListIterator 的区别是什么？
+17. <a href="#1.17">Iterator 和 ListIterator 的区别是什么？</a>
 
-18. 数组 (Array) 和列表 (ArrayList) 有什么区别？什么时候应该使用 Array 而不是 ArrayList？
+18. <a href="#1.18">数组 (Array) 和列表 (ArrayList) 有什么区别？什么时候应该使用 Array 而不是 ArrayList？</a>
 
 19. Java 集合类框架的最佳实践有哪些？
 
@@ -755,6 +755,90 @@ LinkedHashMap 实现与 HashMap 的不同之处在于，后者维护着一个运
 
 所以对象没有序列化，怎么能在网络传输呢？**要网络传输就得转为字节流**，在分布式应用中，你就得实现序列化。如果不需要分布式引用，那就没必要实现序列化。
 
+
+### <p id="1.16">16、什么是迭代器 (Iterator)？</p>
+
+Iterator接口提供了很多对集合元素进行迭代的方法，每一个集合类都包括了可以返回迭代器实例的迭代方法。
+
+迭代器可以在迭代过程中删除底层集合的元素，但是不可以直接调用集合的remove(Object obj)删除，可以通过迭代器的remove()方法删除。
+
+
+### <p id="1.17">17、Iterator 和 ListIterator 的区别是什么？</p>
+
+Iterator和ListIterator是Java三个游标中的两个，都是由Java.UTIL包中的集合框架定义的。
+
+**Iterator是什么？**
+
+Iterator代表迭代器，是Collection框架中的一个接口；用于遍历集合元素。
+
+它允许逐个迭代集合中的每个元素，从集合中获取元素或从集合中删除元素；但无法使用Iterator修改集合中的任何元素。
+
+Iterator有一个iterator()方法，它会将迭代器返回到集合的开头。一旦得到一个集合开头的迭代器，然后遍历集合中的元素，就建立一个循环，每次循环迭代时调用hasNext()。
+
+hasNext()如果返回true，则表示集合中存在下一个元素；如果返回false，则表示遍历所有元素。然后在循环内部，可以使用next()获取集合中的每个元素。next()方法返回集合的下一个元素。
+
+缺点：
+
+●　使用Iterator，就只能向前移动集合。
+●　使用Iterator，就无法操纵或修改集合中的元素。
+
+**ListIterator是什么？**
+
+ListIterator是Collection框架中的一个接口；是用于扩展Iterator接口的。
+
+使用ListIterator，可以向前和向后遍历集合的元素。还可以添加、删除或修改集合中的任何元素。简而言之，我们可以说它消除了Iterator的缺点。
+
+ListIterator的方法如下：
+
+●　hasNext()：如果返回true，则确认集合中有更多元素。
+
+●　next()：返回列表的下一个元素。
+
+●　nextIndex()：返回列表中下一个元素的索引。
+
+●　hasPrevious()：如果集合中有相反的元素，则返回true。
+
+●　previous()：返回集合中的上一个元素。
+
+●　previousIndex()：返回集合中上一个元素的索引。
+
+●　remove()：从集合中删除元素。
+
+●　set()：修改集合中的元素。
+
+●　add()：在集合中添加新元素。
+
+
+**Iterator和ListIterator之间的主要区别**
+
+1、遍历
+
+使用Iterator，可以遍历所有集合，如Map，List，Set；但只能在向前方向上遍历集合中的元素。
+
+使用ListIterator，只能遍历List实现的对象，但可以向前和向后遍历集合中的元素。
+
+2、添加元素
+
+Iterator无法向集合中添加元素；而，ListIteror可以向集合添加元素。
+
+3、修改元素
+
+Iterator无法修改集合中的元素；而，ListIterator可以使用set()修改集合中的元素。
+
+4、索引
+
+Iterator无法获取集合中元素的索引；而，使用ListIterator，可以获取集合中元素的索引。
+
+
+### <p id="1.18">18、数组 (Array) 和列表 (ArrayList) 有什么区别？什么时候应该使用 Array 而不是 ArrayList？</p>
+
+**Array**：它是数组，申明数组的时候就要初始化并确定长度，长度不可变，而且它只能存储同一类型的数据，比如申明为String类型的数组，那么它只能存储S听类型数据。
+
+**ArrayList**：它是一个集合，需要先申明，然后再添加数据，长度是根据内容的多少而改变的，ArrayList可以存放不同类型的数据，在存储基本类型数据的时候要使用基本数据类型的包装类。
+
+**区别**：
+
+当能确定长度并且数据类型一致的时候就可以用数组，其他时候使用ArrayList。
 
 
 
