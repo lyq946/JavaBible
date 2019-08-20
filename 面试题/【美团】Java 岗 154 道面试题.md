@@ -38,7 +38,7 @@
 
 18. <a href="#1.18">数组 (Array) 和列表 (ArrayList) 有什么区别？什么时候应该使用 Array 而不是 ArrayList？</a>
 
-19. Java 集合类框架的最佳实践有哪些？
+19. <a href="#1.19">Java 集合类框架的最佳实践有哪些？</a>
 
 20. Set 里的元素是不能重复的，那么用什么方法来区分重复与否呢？是用 == 还是 equals()？它们有何区别？
 
@@ -151,7 +151,7 @@
 28. 很多人都说要慎用 ThreadLocal，谈谈你的理解，使用 ThreadLocal 需要注意些什么？
 
 
-## spring 25题
+## Spring 25题
 
 1. 什么是 Spring 框架？Spring 框架有哪些主要模块？
 
@@ -838,5 +838,56 @@ Iterator无法获取集合中元素的索引；而，使用ListIterator，可以
 
 **区别**：当能确定长度并且数据类型一致的时候就可以用数组，其他时候使用ArrayList。
 
+
+### <p id="1.19">19、Java 集合类框架的最佳实践有哪些？</p>
+
+![Java集合框架](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasRokhQ5FrqQz2xDzQOudWUvBHSdSic6LDkLFRBq0RJicXkUn4brN21djQNX02c4VnaNehd5YU8ibzKDw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+
+### <p id="1.20">20、Set 里的元素是不能重复的，那么用什么方法来区分重复与否呢？是用 == 还是 equals()？它们有何区别？</p>
+
+Set 里的元素是不能重复的，元素重复与否是使用 equals() 方法进行判断的。
+
+equals() 和 == 方法决定引用值是否指向同一对象 equals() 在类中被覆盖，为的是当两个分离的对象的内容和类型相配的话，返回真值。
+
+
+### <p id="1.21">21、Comparable 和 Comparator 接口是干什么的？列出它们的区别。</p>
+
+Comparable 和 Comparator 都是用来实现集合中元素的比较、排序的。
+
+**Comparable**
+
+Comparable 是在集合内部定义的方法实现的排序，位于 java.lang 下。它是一个对象本身就已经支持自比较所需要实现的接口，如 String、Integer 自己就实现了 Comparable 接口，可完成比较大小操作。
+
+自定义类要在加入 list 容器中后能够排序，也可以实现 Comparable 接口，用在 Collections 类的 sort 方法排序时若不指定 Comparator，那就以自然排序排列。
+
+所谓自然顺序就是实现 Comparable 接口设定的排序方式。
+
+**Comparator**
+
+Comparator 是在集合外部实现的排序，位于 java.util 下。它是一个专门的比较器，当这个对象不支持自比较或者自比较函数不能满足要求时，可写一个比较器来完成两个对象之间大小的比较。
+
+Comparator 体现了一种策略模式（strategy design pattern），就是不改变对象自身，而用一个策略对象（strategy object）来改变它的行为。
+
+**区别**
+
+总而言之 Comparable 是自己完成比较，Comparator 是外部程序实现比较。
+
+
+### <p id="1.22">22、Collection 和 Collections 的区别。</p>
+
+**Collection 与 Collections 的根本区别是：**
+
+1、Collection 是一个集合接口。它提供了对接好对象进行基本操作的通用接口方法。Collection 接口在 Java 类库中有很多具体的实现。Collection 接口的意义是为各种具体的集合提供了最大化的统一操作方式。
+
+![java 集合架构图](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasRokhQ5FrqQz2xDzQOudWUvC1vScTZyyqLseEMLOGkozCWxibtPic3BibjsLBLA8apYUOboiaON3kK8FQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+2、Collections 是一个包装类。它包含有各种有关集合操作的静态多态方法。此类不能实例化，就像一个工具类，服务于 Java 的 Collection 框架。
+
+![Collection 类](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasRokhQ5FrqQz2xDzQOudWUvprFQbEUpq4ia6fZ7O5UibPFugZ1bA0H3dp1kbmUtsiarU2vic9qhjeFvlw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+Collections 是一个包装类，Collection 表示一组对象，这些对象也成为 Collection 的元素。一些 Collection 允许有重复的元素，而另一些则不允许，一些 Collection 是有序的，而另一些则是无需的。
+
+![Collections 各个集合实现图](https://mmbiz.qpic.cn/mmbiz_png/ABIWtj6YasRokhQ5FrqQz2xDzQOudWUvQ4jbCFkdhgbBWXIiaJAZxsg5wVZO8fiagApbhLGicRriaEoxIC0cHez26A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 
