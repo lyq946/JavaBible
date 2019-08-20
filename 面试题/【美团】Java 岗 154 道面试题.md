@@ -40,11 +40,11 @@
 
 19. <a href="#1.19">Java 集合类框架的最佳实践有哪些？</a>
 
-20. Set 里的元素是不能重复的，那么用什么方法来区分重复与否呢？是用 == 还是 equals()？它们有何区别？
+20. <a href="#1.20">Set 里的元素是不能重复的，那么用什么方法来区分重复与否呢？是用 == 还是 equals()？它们有何区别？</a>
 
-21. Comparable 和 Comparator 接口是干什么的？列出它们的区别
+21. <a href="#1.21">Comparable 和 Comparator 接口是干什么的？列出它们的区别。</a>
 
-22. Collection 和 Collections 的区别。
+22. <a href="#1.22">Collection 和 Collections 的区别。</a>
 
 
 ## JVM与调优21题
