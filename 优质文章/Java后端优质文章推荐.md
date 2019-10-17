@@ -12,4 +12,6 @@
 
 + [红黑树 Java实现](https://www.cnblogs.com/zedosu/p/6635034.html)
 
+### 锁
 
++ [轻松学习java可重入锁(ReentrantLock)的实现原理](https://blog.csdn.net/yanyan19880509/article/details/52345422/)
