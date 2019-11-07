@@ -4,10 +4,11 @@
 
 # 目录
 
-+ <a href="#java">Java<a>
-+ <a href="#面试题">面试题<a>
-+ <a href="#优质文章">优质文章收录<a>
-+ <a href="#设计模式">设计模式<a>
++ <a href="#java">Java</a>
++ <a href="#面试题">面试题</a>
++ <a href="#优质文章">优质文章收录</a>
++ <a href="#设计模式">设计模式</a>
++ <a href="#学习数据">学习书籍</a>
 
 # Java<p id="java"></p>
 
@@ -29,4 +30,9 @@
 + <a href="https://github.com/gdjkmax/JavaBible/blob/master/DesignPattern/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%8D%95%E6%8E%92%E5%AD%A6%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%8C%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F%E3%80%8D%E9%BB%91%E9%93%81%20II.md">从零开始单排学设计模式「策略模式」黑铁 II</a>
 + <a href="https://github.com/gdjkmax/JavaBible/blob/master/DesignPattern/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%8D%95%E6%8E%92%E5%AD%A6%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%8C%E8%A3%85%E9%A5%B0%E6%A8%A1%E5%BC%8F%E3%80%8D%E9%BB%91%E9%93%81%20I.md">从零开始单排学设计模式「装饰模式」黑铁 I</a>
 + <a href="https://github.com/gdjkmax/JavaBible/blob/master/DesignPattern/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%8D%95%E6%8E%92%E5%AD%A6%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%8C%E5%8D%95%E4%B8%80%E8%81%8C%E8%B4%A3%E5%8E%9F%E5%88%99%E3%80%8D%E9%BB%91%E9%93%81%20-%20%E9%9D%92%E9%93%9C%20%E6%99%8B%E7%BA%A7%E8%B5%9B.md">从零开始单排学设计模式「单一职责原则」黑铁 - 青铜 晋级赛</a>
+
+# 学习书籍<p id="学习书籍"></p>
+
++ <a href="https://github.com/gdjkmax/JavaBible/blob/master/%E5%AD%A6%E4%B9%A0%E4%B9%A6%E7%B1%8D/Java%20%E6%8A%80%E6%9C%AF%E4%B9%A6%E7%B1%8D%E5%A4%A7%E5%85%A8.md">Java 技术书籍大全</a>
+
 
