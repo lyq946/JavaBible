@@ -6,7 +6,7 @@
 
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247492564&idx=3&sn=9f57b6a74830f1db816e0ef37fb466be&chksm=fa271cbccd5095aa965c8fdfc3a5a39a5d3611b7ff0ed706081accca50f13d7e21147da03a43&token=1743137442&lang=zh_CN#rd">【03期】如何决定使用 HashMap 还是 TreeMap？</a>
 
-<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247492564&idx=3&sn=9f57b6a74830f1db816e0ef37fb466be&chksm=fa271cbccd5095aa965c8fdfc3a5a39a5d3611b7ff0ed706081accca50f13d7e21147da03a43&token=1743137442&lang=zh_CN#rd">【04期】分库分表之后，id 主键如何处理？</a>
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247492586&idx=3&sn=ef62ccf6678a23320cca112f4d4a9e1f&chksm=fa271c82cd509594a66f6b4154a4320eb960ef592c09c92f398d34b2824bda1f02c745a7522b&token=425049995&lang=zh_CN#rd">【04期】分库分表之后，id 主键如何处理？</a>
 
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247492687&idx=3&sn=e3fcd8d9c38c03bc8f46f6da1484dbda&chksm=fa271b27cd509231a98e242b826feb1648bed388bc32a50b435285cc02d7ea4d35f3f46e3147&token=425049995&lang=zh_CN#rd">【05期】消息队列中，如何保证消息的顺序性？</a>
 
