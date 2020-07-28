@@ -10,3 +10,4 @@
 
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247492687&idx=3&sn=e3fcd8d9c38c03bc8f46f6da1484dbda&chksm=fa271b27cd509231a98e242b826feb1648bed388bc32a50b435285cc02d7ea4d35f3f46e3147&token=425049995&lang=zh_CN#rd">【05期】消息队列中，如何保证消息的顺序性？</a>
 
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247492725&idx=3&sn=7a470d25797a1479649a90ffa1ba9df4&chksm=fa271b1dcd50920bd02def3ce9345c9d7a0f7a3d02e4adfee157b79a877ba9b9056be31f0ee5&token=695691411&lang=zh_CN#rd">【06期】单例模式有几种写法？</a>
