@@ -13,3 +13,5 @@
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247492725&idx=3&sn=7a470d25797a1479649a90ffa1ba9df4&chksm=fa271b1dcd50920bd02def3ce9345c9d7a0f7a3d02e4adfee157b79a877ba9b9056be31f0ee5&token=695691411&lang=zh_CN#rd">【06期】单例模式有几种写法？</a>
 
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247492753&idx=3&sn=b64c4487d9731eee67ed6b79e30ba682&chksm=fa271bf9cd5092ef1183d7a1e68fc3e425f7872307f64dddba238abed3b1353548e1bf4af5e4&token=1671661694&lang=zh_CN#rd">【07期】Redis中是如何实现分布式锁的？</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247492940&idx=3&sn=38aabb5279e4baf4e4d52cbbb0798250&chksm=fa271a24cd509332828df7198891ca6c98fd77d38664f8c289b5c583789a0825b3290b7faa13&token=1742414119&lang=zh_CN#rd">【08期】说说Object类下面有几种方法呢？</a>
