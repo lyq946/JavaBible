@@ -15,3 +15,5 @@
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247492753&idx=3&sn=b64c4487d9731eee67ed6b79e30ba682&chksm=fa271bf9cd5092ef1183d7a1e68fc3e425f7872307f64dddba238abed3b1353548e1bf4af5e4&token=1671661694&lang=zh_CN#rd">【07期】Redis中是如何实现分布式锁的？</a>
 
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247492940&idx=3&sn=38aabb5279e4baf4e4d52cbbb0798250&chksm=fa271a24cd509332828df7198891ca6c98fd77d38664f8c289b5c583789a0825b3290b7faa13&token=1742414119&lang=zh_CN#rd">【08期】说说Object类下面有几种方法呢？</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247493108&idx=3&sn=d279a11c184076a81a5c7cf50b9d1d6d&chksm=fa271a9ccd50938a04b2feac3b9a4c19286fa724b25d835320472d3d51b71d3e87cda056a3ec&token=1438247324&lang=zh_CN#rd">【09期】说说hashCode() 和 equals() 之间的关系？</a>
