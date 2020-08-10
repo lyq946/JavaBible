@@ -17,3 +17,7 @@
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247492940&idx=3&sn=38aabb5279e4baf4e4d52cbbb0798250&chksm=fa271a24cd509332828df7198891ca6c98fd77d38664f8c289b5c583789a0825b3290b7faa13&token=1742414119&lang=zh_CN#rd">【08期】说说Object类下面有几种方法呢？</a>
 
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247493108&idx=3&sn=d279a11c184076a81a5c7cf50b9d1d6d&chksm=fa271a9ccd50938a04b2feac3b9a4c19286fa724b25d835320472d3d51b71d3e87cda056a3ec&token=1438247324&lang=zh_CN#rd">【09期】说说hashCode() 和 equals() 之间的关系？</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247493194&idx=3&sn=9d9d5c3378b562fbe927f750203aa0e9&chksm=fa271922cd509034f4c1d4d4e232f452e31ef444f429b20a2656fbf3a7a0eed827048f0eec80&token=308854338&lang=zh_CN#rd">【10期】Redis 面试常见问答</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247493241&idx=3&sn=546b0a1072257f053ec2fef2f9771265&chksm=fa271911cd50900763e341967dd9465dbf6fb0725d537d346ca2800934c2fd73e03025963ef6&token=308854338&lang=zh_CN#rd">【11期】分布式系统接口，如何避免表单的重复提交？</a>
