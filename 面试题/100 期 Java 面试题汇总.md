@@ -26,4 +26,5 @@
 
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247493308&idx=3&sn=17f695f4842c467c31246a216d17554a&chksm=fa2719d4cd5090c22c61f18071399550eb8afa681ecfdade986639cc3fb29184c6cf59b1966d&token=294911000&lang=zh_CN#rd">【12期】谈谈项目中单点登录的实现原理？</a>
 
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247493372&idx=3&sn=b44d87c99294cfd3ffdcae4c91e3d2b6&chksm=fa271994cd509082edd9427b8f323e0b089afbdb821cf64b41bad8a90680e3fc64384a86d099&token=1230070682&lang=zh_CN#rd">【13期】谈谈 Redis 的过期策略</a>
 
