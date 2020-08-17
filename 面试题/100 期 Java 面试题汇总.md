@@ -30,3 +30,7 @@
 
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247493514&idx=3&sn=1629b51a4caf6b3d30685e727e30e304&chksm=fa2718e2cd5091f475d84f5d534e2c0380fdb73cd16866c6bcd7db6fc96d16eaa93f15d43db1&token=449605412&lang=zh_CN#rd">【14期】你能说说进程与线程的区别吗</a>
 
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247493560&idx=3&sn=b83adfaca7563faadcf3c40d556d53e0&chksm=fa2718d0cd5091c60bf07dd612598317461968f315763ab05e1d9cbb9a72659a140d920bb4e6&token=1723103829&lang=zh_CN#rd">【15期】谈谈这几个常见的多线程面试题</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247493608&idx=3&sn=7a046ece1005fc8c54d27a6bc8bca27d&chksm=fa271880cd5091960fecf218c4a35e86c7d5ea50709d34e5f3c1da11314df0cc224f0aebc6ed&token=1723103829&lang=zh_CN#rd">【16期】你能谈谈HashMap怎样解决hash冲突吗</a>
+
