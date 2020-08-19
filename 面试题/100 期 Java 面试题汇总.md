@@ -34,3 +34,6 @@
 
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247493608&idx=3&sn=7a046ece1005fc8c54d27a6bc8bca27d&chksm=fa271880cd5091960fecf218c4a35e86c7d5ea50709d34e5f3c1da11314df0cc224f0aebc6ed&token=1723103829&lang=zh_CN#rd">【16期】你能谈谈HashMap怎样解决hash冲突吗</a>
 
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247493655&idx=3&sn=36962db2752aebe31b6c50e44f82f960&chksm=fa27177fcd509e6923e3dc77e0a8e2d0cf17df0a0c112c91e7cf16257d9cecead52a17c3ee0c&token=1564091442&lang=zh_CN#rd">【17期】什么情况用ArrayList or LinkedList呢?</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247493691&idx=3&sn=6be323e6c2216c0b6d95afe1b6df8240&chksm=fa271753cd509e458b20022d997121be719fd7ffb8bfa84a60a7f67f75ae7c884ef8c766c247&token=1564091442&lang=zh_CN#rd">【18期】Java序列化与反序列化三连问：是什么？为什么要？如何做？</a>
