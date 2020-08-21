@@ -37,3 +37,8 @@
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247493655&idx=3&sn=36962db2752aebe31b6c50e44f82f960&chksm=fa27177fcd509e6923e3dc77e0a8e2d0cf17df0a0c112c91e7cf16257d9cecead52a17c3ee0c&token=1564091442&lang=zh_CN#rd">【17期】什么情况用ArrayList or LinkedList呢?</a>
 
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247493691&idx=3&sn=6be323e6c2216c0b6d95afe1b6df8240&chksm=fa271753cd509e458b20022d997121be719fd7ffb8bfa84a60a7f67f75ae7c884ef8c766c247&token=1564091442&lang=zh_CN#rd">【18期】Java序列化与反序列化三连问：是什么？为什么要？如何做？</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247493741&idx=3&sn=cc1e4d8347259c0306447eb6b0ea8866&chksm=fa271705cd509e13629a51a07916afec0dc0e892dc9956e25bc960b396ffa1c822f34fd98604&token=2007603027&lang=zh_CN#rd">【19期】为什么Java线程没有Running状态？</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247493774&idx=3&sn=d81905f7e2fa9c1d78b9387821b548df&chksm=fa2717e6cd509ef0680fa552607dca1ead1d01a718c2a4188f84caabf944d7c2d54d6f691ba5&token=2007603027&lang=zh_CN#rd">【20期】你知道为什么HashMap是线程不安全的吗？</a>
+
