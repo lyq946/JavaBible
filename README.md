@@ -23,7 +23,7 @@
 
 # 文章推荐<p id="文章推荐"></p>
 
-+ <a href="https://github.com/gdjkmax/JavaBible/blob/master/%E4%BC%98%E8%B4%A8%E6%96%87%E7%AB%A0%E6%94%B6%E5%BD%95/Java%E5%90%8E%E7%AB%AF%E4%BC%98%E8%B4%A8%E6%96%87%E7%AB%A0%E6%8E%A8%E8%8D%90.md">Java后端优质文章推荐</a>
++ <a href="https://github.com/gdjkmax/JavaBible/blob/master/%E6%96%87%E7%AB%A0%E6%8E%A8%E8%8D%90/Java%E5%90%8E%E7%AB%AF%E4%BC%98%E8%B4%A8%E6%96%87%E7%AB%A0%E6%8E%A8%E8%8D%90.md">Java后端优质文章推荐</a>
 
 # 设计模式<p id="设计模式"></p>
 
