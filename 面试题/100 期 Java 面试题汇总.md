@@ -42,3 +42,37 @@
 
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247493774&idx=3&sn=d81905f7e2fa9c1d78b9387821b548df&chksm=fa2717e6cd509ef0680fa552607dca1ead1d01a718c2a4188f84caabf944d7c2d54d6f691ba5&token=2007603027&lang=zh_CN#rd">【20期】你知道为什么HashMap是线程不安全的吗？</a>
 
+## 21-30期
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247493969&idx=3&sn=9b43a0049a080145fb7c49afd46cddfa&chksm=fa271639cd509f2f9e745df214f6c676f88e9d1255c95eaa5078c38da07cbadd6cfd44ebcbf5&token=1607051089&lang=zh_CN#rd">【21期】你能说说Java中Comparable和Comparator的区别吗</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247494002&idx=3&sn=01a03464410fbd17dfd3b675df5d54df&chksm=fa27161acd509f0ca7ccd3c343e6342bbb76b3ac0ed5d711417e13fb35b67c8d08bddecafdc5&token=1607051089&lang=zh_CN#rd">【22期】为什么需要消息队列？使用消息队列有什么好处？</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247494054&idx=3&sn=81bc690ed8bd26c6c8bba7e1184c2422&chksm=fa2716cecd509fd82343a1cf14a9ff4f1f93891b7a8b80766af6a261b973fa7c1de033867ad3&token=1607051089&lang=zh_CN#rd">【23期】请你谈谈关于IO同步、异步、阻塞、非阻塞的区别</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247494112&idx=3&sn=158340a1cb4a56156ff3fce04994f622&chksm=fa271688cd509f9e9d16fa6d4bb50ab2ebe073a521f6731daf572efb12069a17ab77a1bc9f65&token=1607051089&lang=zh_CN#rd">【24期】请你谈谈单例模式的优缺点,注意事项,使用场景</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247494139&idx=3&sn=6653a83beab42cf0a86807150a379477&chksm=fa271693cd509f851995fe53bb6366e0830f594962c470d7b741f9c2992c8384b1fb1362bcf4&token=1607051089&lang=zh_CN#rd">【25期】这三道常见的面试题，你有被问过吗？</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247494231&idx=3&sn=2ab4f33299aec3a689c1f1c9156e56de&chksm=fa27153fcd509c2994daa26a5e47e42b57540a0ff7dc8a7481b613ef8803a5cc15f67cd11478&token=1607051089&lang=zh_CN#rd">【26期】如何判断一个对象是否存活?(或者GC对象的判定方法)?</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247494265&idx=3&sn=eedac96d50753ce1d34b3c051ea791a3&chksm=fa271511cd509c07b97f1de5f50dd4bbf0ef3c6bbd9a9b094defdc6cfae78fa61e4aba3cbf3b&token=1607051089&lang=zh_CN#rd">【27期】Dubbo面试八连问，这些你都能答上来吗？</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247494314&idx=3&sn=d358db56e772353a46eed5bf26fbb0e9&chksm=fa2715c2cd509cd4a5645888bff67884679eafcacbe21cacf13a5e03349eaba087790487ba15&token=1607051089&lang=zh_CN#rd">【28期】ZooKeeper面试那些事儿</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247494346&idx=3&sn=5cbdbe84d3400e52c2335c9c418e7161&chksm=fa2715a2cd509cb4377fd0098ea1edbb592aada0a849a4fca4181338ee3b0518b81fd3e8ea74&token=1607051089&lang=zh_CN#rd">【29期】Java集合框架 10 连问，你有被问过吗？</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247494382&idx=3&sn=6070a9c784d33413b02150cb8d18f370&chksm=fa271586cd509c907758f539ed57beca7a2da32b3bdcaa4443b10f7fd2874dfe6318ed19a1db&token=1607051089&lang=zh_CN#rd">【30期】说一下HashMap的实现原理？</a>
+
+## 31-40期
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247494578&idx=3&sn=0e8b8bbca68433c5389cf4adbb8ef3a8&chksm=fa2714dacd509dcccf24775379b12b18a4ab3ad17b073554ecf4332d0ca6e218e5f75c9e1fe4&token=1607051089&lang=zh_CN#rd">【31期】了解什么是 redis 的雪崩、穿透和击穿？redis 崩溃之后会怎么样？应对措施是什么</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247494617&idx=3&sn=9794ad3403955a8e67a738d19a4c7117&chksm=fa2714b1cd509da75a83edab1ca93d23b35217519947def2939ebc3e23ca59a3473b4b3374a1&token=1607051089&lang=zh_CN#rd">【32期】你知道Redis的字符串是怎么实现的吗？</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247494723&idx=3&sn=86f7e56febbea8efb5703865537742d0&chksm=fa27132bcd509a3d4085c2b18b2a54169436810da56f3054031c4136e372725f25f5ae0cd157&token=1607051089&lang=zh_CN#rd">【33期】分别谈谈联合索引生效和失效的条件</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247494775&idx=3&sn=1b40435d36c6a490df67c5acea5617e7&chksm=fa27131fcd509a09eff810f77ca4ac938f2f24905a16a1334dddc6f739e16f83dc0006f0f822&token=1607051089&lang=zh_CN#rd">【34期】谈谈为什么要拆分数据库？有哪些方法？</a>
+
+
+
