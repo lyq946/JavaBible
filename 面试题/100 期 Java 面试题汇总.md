@@ -74,5 +74,7 @@
 
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247494775&idx=3&sn=1b40435d36c6a490df67c5acea5617e7&chksm=fa27131fcd509a09eff810f77ca4ac938f2f24905a16a1334dddc6f739e16f83dc0006f0f822&token=1607051089&lang=zh_CN#rd">【34期】谈谈为什么要拆分数据库？有哪些方法？</a>
 
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247494864&idx=3&sn=a1f5b7da3972b19ab7d895611c26e62a&chksm=fa2713b8cd509aaeb99861f75fe41c99af157f4b0f162471948609ce8302e9e9c83258491665&token=574151327&lang=zh_CN#rd">【35期】谈谈你对Java线程之间通信方式的理解</a>
 
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247494900&idx=3&sn=f428375df2d1f71c5ad018b115be2b65&chksm=fa27139ccd509a8afceab8d538cd180607d1c7a222da03635c779f5eb8888a42c3f1a3e67e80&token=574151327&lang=zh_CN#rd">【36期】说说 如何停止一个正在运行的线程？</a>
 
