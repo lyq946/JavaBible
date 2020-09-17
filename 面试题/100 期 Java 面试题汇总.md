@@ -79,3 +79,7 @@
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247494900&idx=3&sn=f428375df2d1f71c5ad018b115be2b65&chksm=fa27139ccd509a8afceab8d538cd180607d1c7a222da03635c779f5eb8888a42c3f1a3e67e80&token=574151327&lang=zh_CN#rd">【36期】说说 如何停止一个正在运行的线程？</a>
 
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247494950&idx=3&sn=0e99f79bae252a8a5c226dff4f850f27&chksm=fa27124ecd509b5806c3bdb7290904f17b5ef89abdd9ff06a3ccd5df7a4e9eff34f2c3ed4a2c&token=1071209343&lang=zh_CN#rd">【37期】请你详细说说类加载流程，类加载机制及自定义类加载器</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247495005&idx=3&sn=7dac14d1ed533f41ec824fc74c5c1b06&chksm=fa271235cd509b23ca74c4c1d41372b4d8de615e43c03aec2cca625108db17376d7e1d1017f9&token=488427241&lang=zh_CN#rd">【38期】一份tcp、http面试指南，常考点都给你了</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247495044&idx=3&sn=b79d8195ba486031983958861abb233a&chksm=fa2712eccd509bfa55bc02f23016e2c5d871187726d51764fe861714a86b17fac98840247c4c&token=488427241&lang=zh_CN#rd">【39期】Mybatis面试18问，你想知道的都在这里了！</a>
