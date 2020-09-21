@@ -89,3 +89,10 @@
 ## 41-50期
 
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247495168&idx=3&sn=433277afd6c33151262d48dc956aaae7&chksm=fa271168cd50987ee05503b95cd35e867af23ff2e75f453fff25a0cbc45476f81b44d7cb5a73&token=1819587068&lang=zh_CN#rd">【41期】盘点那些必问的数据结构算法题之链表</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247495241&idx=3&sn=d35c8dcc9265d880c6eebe222944b8a2&chksm=fa271121cd509837000938f57a760799d8ffdaa9815bfb5f4e711b9836aaf91f7e5b60bc250f&token=1819587068&lang=zh_CN#rd">【42期】盘点那些必问的数据结构算法题之二叉堆</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247495287&idx=3&sn=b1d50b293435ac452c28843cd566772e&chksm=fa27111fcd509809d17551ddb66a9561d772fc6165592f80309dc9fe5549bcbd4b254eb12c81&token=1819587068&lang=zh_CN#rd">【43期】盘点那些必问的数据结构算法题之二叉树基础</a>
+
+
+
