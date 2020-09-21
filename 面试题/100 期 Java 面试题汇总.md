@@ -83,3 +83,9 @@
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247495005&idx=3&sn=7dac14d1ed533f41ec824fc74c5c1b06&chksm=fa271235cd509b23ca74c4c1d41372b4d8de615e43c03aec2cca625108db17376d7e1d1017f9&token=488427241&lang=zh_CN#rd">【38期】一份tcp、http面试指南，常考点都给你了</a>
 
 <a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247495044&idx=3&sn=b79d8195ba486031983958861abb233a&chksm=fa2712eccd509bfa55bc02f23016e2c5d871187726d51764fe861714a86b17fac98840247c4c&token=488427241&lang=zh_CN#rd">【39期】Mybatis面试18问，你想知道的都在这里了！</a>
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247495110&idx=3&sn=6a58061c2af0c341a68fccbb6cda697d&chksm=fa2712aecd509bb8740bc69608a54512240663018cb1ca1bc1f5bcd15d86de4d1a31138a7023&token=1819587068&lang=zh_CN#rd">【40期】说一下线程池内部工作原理</a>
+
+## 41-50期
+
+<a href="https://mp.weixin.qq.com/s?__biz=MzUyNDkzNzczNQ==&mid=2247495168&idx=3&sn=433277afd6c33151262d48dc956aaae7&chksm=fa271168cd50987ee05503b95cd35e867af23ff2e75f453fff25a0cbc45476f81b44d7cb5a73&token=1819587068&lang=zh_CN#rd">【41期】盘点那些必问的数据结构算法题之链表</a>
