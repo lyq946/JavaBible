@@ -275,100 +275,380 @@
 
 ### 分布式
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIVBFYdXRYyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbEgERAVMYa2pZQFosBTlLZ09hNX5YQnF1dDZBPlMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxYKEgBQHVolBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1XUYHGwUFH1sQUBdXUE5aFwpAUgccU0IEE1JVTA8SUEU3VxpaEQs%3D">《从Paxos到Zookeeper分布式一致性原理与实践》</a> - 豆瓣评分 7.8
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIbDlQdUhwyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbHAsTAVwSa0pWG3JSegdOYWRPKkAlSlduUQpnUmUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxMDVitaJQIVBlUaUxYKFwBQE1glBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1WBICQFBUHAlHBUVTUBwMEwsSUwceCRwLE1cCElhBARE3VxpaEQs%3D">《ZooKeeper：分布式过程协同技术详解》</a> - 豆瓣评分 7.2
 
-+ <a href="">《》</a>
+### 搜索引擎
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQERAVwbXxIyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFgQbB1Eca3ZUCAMwUA1xZ0RlJno8bHtGDhRDPXUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxIHVStaJQIVBlUaUxYKGgVSHFglBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1XkBVGgICHl4UUUYEUBJZEAoXBl0eC0cHEVNRGw9BCkE3VxpaEQs%3D">《从Lucene到Elasticsearch：全文检索实战》</a>
 
-+ <a href="">《》</a>
+### 大数据
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQESBl0dWxcyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFQMaAVUZa2MYcFQeYEFxYEIAAE1dE2BVRTVjHUMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxIHVStaJQIVBlUaUxcDFwRTGFolBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1Cx1SF1NQE1MVVhpQUExZFlEVVFxIUkJWEAJQTgkcBUY3VxpaEQs%3D">《Hadoop权威指南：大数据的存储与分析(第4版)》</a> - 豆瓣评分 8.7
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQERB1cbXxYyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFgIQB1EYa3ZDeUcAfgxgZ2EAFhkCRlAWUglGM0MOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxIHVStaJQIVBlUaUxcDGgJQGV0lBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1CxQFE1BWHQwTURYFUBpSFVJCDgAeCUAAFlUFTAtGA0U3VxpaEQs%3D">《Hadoop构建数据仓库实践》</a> - 豆瓣评分 8.3
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIQBFUaWRMyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbFwESBlcda08EbkEdeh9UZ3NHA2MaUwBrVDNQU2UOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxcCEAVUGVolBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1U0UFFlVQHAlAA0FTUExcHVEbDlcZDxZRRgUHGwwdBxM3VxpaEQs%3D">《HBase权威指南 [HBase： The Definitive Guide]》</a> - 豆瓣评分 8.1
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQETBFUdUxUyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFAESAV0ba2oCFwc8aV1zZ1kdXFMEfVxRe1duMmUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxcCFQFVH1MlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1WRdWFwFUGV8dBUEEUBlaEgobBFMYCREDQlRQS18UAUY3VxpaEQs%3D">《图解Spark：核心技术与案例实战》</a> - 豆瓣评分 7.6
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIQAFcdWR0yVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbFwUQAVcTa1cCEXIqZyVhYU9TVWkJcwVtbitnXnUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxcCGgZWEl4lBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1WREHFVJXGwkcURcHUEwPQVFBDgYcWUABFgJUHVhCV0c3VxpaEQs%3D">《Hive编程指南 [Programming Hive]》</a> - 豆瓣评分 7.4
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQERA1QZWxQyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFgYTBVUaaw95enUAYg9vYVNbMUEIfXB0QDMSBUMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBhYCXStaJQIVBlUaUxcBEgdTHlklBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DhBRQARVHwgXBxRUUB9ZQgtABlVIDxICFgUHSQkdUhs3VxpaEQs%3D">《HBase应用架构》</a>
 
-+ <a href="">《》</a>
+## 架构
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIXAlAfUhYyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbEAcXA1wYawtSVQYxRzJ9Z0lxMmwiZ2VPTlFaDmUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxcAEQZSElglBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DxMLE1JdHFgdBBUCUB1cE1EQV1EZD0ILEwRWTFIdARE3VxpaEQs%3D">《Web性能权威指南》</a> - 豆瓣评分 8.8
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEXA1QZXhwyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYEAYTBVASa2lDRlAzbx4cYgxTUV46RmcabwVhLWUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxcAEA5dElolBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1XR0BEgYHTFgXVkZUUB5bE1FGA1wSC0ACQAFcGAgVV0I3VxpaEQs%3D">《从零开始学架构：照着做，你也能成为架构师》</a> - 豆瓣评分 8.5
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIQBFAbXxYyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbFwEXB1EYa3ZLd3kiRQFQYmQdKXoBckRsAitSCHUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxMDVitaJQIVBlUaUxcAFQ5SGV8lBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1Dx1XRwdXS1MUAEADUEsMEAtGUwEfWkVSGlJVH1wdCxo3VxpaEQs%3D">《Java应用架构设计：模块化模式与OSGi》</a> - 豆瓣评分 6.9
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEQAVUSWhUyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFwQSDlQba0J4WhkdTi0VZ3JHEFspXGN6flwaEFMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxcAGgdRE1IlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1CEELRVUAG1IdAEdSUBMLHQsQBlBMCR0EEldUSw4XUhY3VxpaEQs%3D">《大型网站技术架构演进与性能优化》</a> - 豆瓣评分 6.8
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQESD1EeUhUyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFQoWAlwbaxcEEHBdSR8dYmZbLHsQQkJkXDZML2UOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxcHEQFQGFslBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DxJQFwACSQwcBhFSUBpbQgpHBwIZXhACRgVUT1sTBkI3VxpaEQs%3D">《高可用架构（第1卷）》</a> - 豆瓣评分 6.3
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEQAVYcWBIyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFwQRAFYca1QcT0wRaAtjYUpXLRNBa1tNdFNLAWUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxcHFQFUEl0lBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1CBYHRwcBHVJHUBMPUEhbQVEbUgIfWRxSFgMCHl9BARE3VxpaEQs%3D">《Java架构师指南》</a>
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQESAVAfXxEyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFQQXA1Efa01yG30yEj1hZ0JPC2UudAp2VCVtU2UOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxMDVitaJQIVBlUaUxcHGgNQHF4lBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DxIARQFTHwsSBxsAUB0MQgpHAFMbW0IGQA4BGw8TUho3VxpaEQs%3D">《大话代码架构（项目实战版）》</a>
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEXAVMcUhcyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYEAQUAFwZa2FpbGQSRA1xYWEEXUsIdmZxDyNGJ3UOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxcGEQ5WGVslBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1XBQCFwBUSw9FChRUUBtbF1ESA1ATDhdXQgFRGV1FC0c3VxpaEQs%3D">《小团队构建大网站：中小研发团队架构实践》</a>
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEXD1wYWxMyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYEAobBFUda2NkV3dcaS5eZ1VDJXgyEgQTdzAYOkMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxcGFw5QHFMlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1UhAFFQMFTFoXURUCUE8LHApCD1QZXkIEQQEBTAhHAxQ3VxpaEQs%3D">《未来架构 从服务化到云原生(限量签名 随机发放)》</a>
 
-+ <a href="">《》</a>
+### 分布式架构
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQESBlcZUh0yVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFQMQBVwTa0J9SU9PYlkTYWhPFHkDbmF0ZClnE3UOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxcFEgJWHVklBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1U0JQEwFTTAxCCxoGUE4LQgoWAFIYUhQEE1VSHFgQC0E3VxpaEQs%3D">《可伸缩架构：面向增长应用的高可用》</a> - 豆瓣评分 7.4
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQERBFYdUhYyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFgERAVwYa2gKdwIyHj92YnBXLl8PUEAMXDABLFMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxcFFwJSHlolBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1XhcGQVQFHFpBBxUOUE4MRwpFUl1PDhVVQg5UHg8QCxM3VxpaEQs%3D">《分布式服务架构：原理、设计与实战》</a> - 豆瓣评分 7.2
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQESA1cTWxAyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFQYQD1Uea1RHekQnRFh%2BYWFlDXoIVlJ1DgB7HkMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxcFGwFTG1IlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1CBVQEAFXSw9GVxRVUEsJElISBgcSWRMHRwddE1kRBRs3VxpaEQs%3D">《亿级流量网站架构核心技术 跟开涛学搭建高可用高并发系统》</a> - 豆瓣评分 6.6
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIWBF0YXBIyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbEQEaBFIcaxNkQgAccgUQZ3MEUh8pQ0VOQgtQHFMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxcEEgJdHFIlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1CxcDEgNUGQlAChpTUBoJRVJBAwFJCUELEQcCSVkUAUA3VxpaEQs%3D">《大型分布式网站架构设计与实践》</a> - 豆瓣评分 6.2
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEQBlwYWRcyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFwMbBFcZa2pyYXs8ZD9cYhNxHnstSAZAdFYYLVMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxcEFwRRHVMlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1XxxSRQYCEw8SCxsDUBNYHVFGV1IcWUJQElBRHQgcVho3VxpaEQs%3D">《可伸缩服务架构：框架与中间件》</a> - 豆瓣评分 5.9
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQESBFMSUhEyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFQEUDlwfa2oGUFwJYhALZ0VbCxxYQQFrXy5vWnUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxcEFQ9VG18lBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DxNQQgJTE1tFVkAPUBpSR1IXU1AZXRRXRVVdH1oQVxc3VxpaEQs%3D">《架构探险：从零开始写分布式服务框架》</a> - 豆瓣评分 5.9
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEXD1IbWRUyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYEAoVB1cba0MCd1JLGg9wYlMAPGJfT0VrZDF4X2UOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxcAUitaJQIVBlUaUxcEGgRcHVglBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1XxELEQYHH1xBABBTUE9aRwpCB1ZOCRJXRgRTSAlAAhI3VxpaEQs%3D">《Cloud Native分布式架构原理与实践》</a>
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEWBl0TWRwyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYEQMaD1cSa3ZfFgcNa1IPYXllBxoPFHd1UVdZPnUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxcLEA5RHFolBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DBYAEVdQTlocC0YBUBtbRwoWVAAeCRYHRQ5QGFwWCxs3VxpaEQs%3D">《分布式系统常用技术及案例分析（第2版）》</a>
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEQD1wcWxwyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFwobAFUSa25KDAQQYghGYVt5A2tZcF9JWDVHGWUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxcLFQdXGlklBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DhVXQAQHGl8RCxpTUE5dQVEQUAFMDEILFA5dGQwcAEc3VxpaEQs%3D">《云原生Java：Spring Boot、Spring Cloud与Cloud Foundry弹性系统设计》</a>
 
-+ <a href="">《》</a>
+### 微服务架构
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIaB1MSWhQyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbHQIUDlQaa0hcEwApWSNSYRN5UWUiZ1JJbgZPPlMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxcKFwZcH1wlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DkcBRQdTHlMQBBoAUBIIFVIbBgYTDkcCRgQCG1tFAUA3VxpaEQs%3D">《微服务设计》</a> - 豆瓣评分 8.2
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQESAFIbXREyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFQUVB1Mfa3JGEUEwWAsRYFVXPk8GclZ1TlF%2BD3UOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxcKFQ9VGVklBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1WxECQgMHGlgdUBdVUBgPF1EXVVcaCRBQRgdSSV5FUUI3VxpaEQs%3D">《生产微服务》</a> - 豆瓣评分 8
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEbDlwZXBIyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYHAsbBVIca31kG3UtTw5NYRFlNkQoSAduexFDRUMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxcKGgZdE1slBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DhIFQQABTA8XC0AFUBhSFFEVBlFMWEBQR1IHSwkcAxE3VxpaEQs%3D">《架构解密：从分布式到微服务》</a> - 豆瓣评分 5.8
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQETDl0bUhQyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFAsaB1waaxVDaXpQYCxNZ055Em0hC1RtQxREA2UOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxADEA5UGl4lBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1X0JSFAYASVMVAhZTUBsIEgsaVVJIUxEEFFcCGFhAURQ3VxpaEQs%3D">《Java微服务》</a> - 豆瓣评分 5.3
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEQDlYeWBwyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFwsRAlYSa2FDW3UvUjNhYWEdLxw7RXRXZFMfOHUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxcAUitaJQIVBlUaUxADFQdcGlIlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1CUBWGgRUHFsUBkIPUEhaFgoRAFQfDxEKFAIFGl5FC0U3VxpaEQs%3D">《Spring Cloud 微服务架构开发实战（全新升级版）》</a>
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEXAVATUh0yVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYEAQXD1wTa29XG3oCYgxgYBtlFAFTTmFEYiptMGUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxADGgBRHlIlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1W0dQFgVREloSBBoBUBNZHQoaVwJIUkALFFRUHQkUBBE3VxpaEQs%3D">《微服务实践》</a>
 
-+ <a href="">《》</a>
+### 架构方法论
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEXAlMbUxYyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYEAcUB10Ya2YEd3cPeCgVZ2pxFk5bcmt5dxVvU2UOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxAAFAJTGlwlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1WRRQFFIHH1kUBEUFUBtfEwsSUlMYUkYLRQNVGF0dUhE3VxpaEQs%3D">《架构整洁之道》</a> - 豆瓣评分 8.8
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQMTAFQYWRYyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtaFAUTBFcYa0ZXEXA1aChiYXEEA20BUXRKVQFsLWUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxMDVitaJQIVBlUaUxALFwdTGFwlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1WxcHQQ8FH1kcCkIEUEsPFAtBAAZJCRZQRQJRSQkUBBs3VxpaEQs%3D">《企业应用架构模式 [Patterns of Enterprise Application Architecture》</a> - 豆瓣评分 8.3
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQESAVIYXRwyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFQQVBFMSa0EEbEY3WiRQYRFTMWY7CwpmXz5sM3UOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxMDVitaJQIVBlUaUxALFAFWE1MlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1XhABEw5dS14VBRsBUEwLFlETU1dIDBIDQA4GHl8cUkA3VxpaEQs%3D">《企业IT架构转型之道 阿里巴巴中台战略思想与架构实战》</a> - 豆瓣评分 8.2
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEQA1MTXxQyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFwYUD1Eaa2xldmU0HQ5lYFdHMU8LXHtZZxJlEFMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxAKEgZWE18lBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1WEEBEQQGS1NBUEUBUBIPFAsRBlNLUxMEG1NUTAwVBUA3VxpaEQs%3D">《聊聊“架构”》</a> - 豆瓣评分 7.6
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQESA10cXxQyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFQYaAFEaa0dbG3kDUAlzYVRhNlAITBxxBAZkGFMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxMDVitaJQIVBlUaUxAKFwVTE1slBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DBAEFwNSHw4dAxsFUEtZQAoSAVxPWUVREAQFSAkcUEY3VxpaEQs%3D">《架构真经：互联网技术架构的设计原则（原书第2版）》</a> - 豆瓣评分 7.5
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQITBFQaWBAyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbFAETBlYea1xaR3E%2BeFNpYghHPEkTY35KWy58I3UOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxAKFAZWHFwlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1XB0EFlIHHFMUARAFUB8OFAtABlNICRVWQQYATgxBVho3VxpaEQs%3D">《软件架构设计：程序员向架构师转型必备（第2版）》</a> - 豆瓣评分 7.4
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIQBlIfWhYyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbFwMVA1QYa05DF1cNTwl%2BYXdDCn8ED2dmYlR%2FWUMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloVBRYAUCtaJQIVBlUaUxAKGgdcGVMlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1CREBEA5SGltBUhFTUBNSEFISDgIfUxIHGwcAHg4UAUU3VxpaEQs%3D">《恰如其分的软件架构 [Just Enough Software Architecture]》</a> - 豆瓣评分 7.3
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEWBVIfWRwyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYEQAVA1cSa3NcYFxcZztsZ1sEIVwJbXxUXVdmLmUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxEDEgNTGV4lBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DhRXQlNST1lAABZQUE5YEQpFAVdJXhNWG1BVTwhHARQ3VxpaEQs%3D">《软件架构设计：大型网站技术架构与业务架构融合之道》</a>
 
-+ <a href="">《》</a>
+## JVM周边语言
 
-+ <a href="">《》</a>
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQERAlcaXxUyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFgcQBlEba05iYHFcGxxxZ3cEUVIYDwVaXF1uHnUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxECEAVRGVglBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1WUICR1dVEwsXARsOUEhbHAtABgVIXUZVQQIGGwhAUEY3VxpaEQs%3D">《Scala编程（第3版）》</a> - 豆瓣评分 9.4
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIWAFIYXB0yVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbEQUVBFITa01Ea3UhExlRYRZ9T2wCVwpIAR1OGlMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxEBFw9WE1IlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1WRMKRgQGSF8QVxpQUE9YEwoQBwdLUhwLGgdWSF1HUBI3VxpaEQs%3D">《Groovy程序设计》</a> - 豆瓣评分 8.2
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQERBFAfWxYyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFgEXA1UYa3UKaHwpGikLYWQdLm0vZXlrBQ9NE3UOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxEAEwNSG1klBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1CxwDQQIHTghHURUOUBlaQlJCA10bXxMGGgJQS11HC0Y3VxpaEQs%3D">《快学Scala（第2版）》</a> - 豆瓣评分 8
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRheFgsWBVEcWh0yEgZUGFodAxsCVRxfFwUiQwpDBUoyS0IQWhkeHAxfEE8HCl4NXAAECUteDEEFWA8LRUpTEwQLR0dKWQoVHUVBRn8AF1sUAxEGXRpSEAIVA1cca3dUVVsLHxhRZxJhEVhYSFdAZhBMJXUOHjdUK1sUAxIAVhlaHQEiN1Uca1RsEgZXHVkSBhQ3VCtbEgMSBl0fWRIBFQBTK1wVCyJcAHVcFwUaBlQTW0IARgNVK2slASI3ZRtrFjJQaVZOXxELGlcCEwkVABcCARoLR1JCD10fXBwGQA5UTFlAMhAGVB9S">《Kotlin极简教程》</a>
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIaBVASWRMyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbHQAXDlcda1YYCGIofFoXZxUdERkETFlGBQdwD0MOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxEAGwNSGFIlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1WUAGFFNQSV8RAUYAUEgIFQsXAlIcXRQBEQNWGgwcBkI3VxpaEQs%3D">《Scala集合技术手册》</a>
+
+## 项目管理&领导力&流程
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQERB1EaWBQyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFgIWBlYaa0kYE2Q0Yi0XYlBbHX4cYgdBQBRIEGUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxEHGwZUGlIlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1WRACR1dXSAtGUEYFUBpTRlJFVVwTXkAGFFJSS14RV0E3VxpaEQs%3D">《构建之法 现代软件工程（第三版）》</a> - 豆瓣评分 9
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIUA1AcUxUyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbEwYXAF0baxwYVnAAfyVXYndDJXgvFApseCwcHVMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxMDVitaJQIVBlUaUxEGEwdcHV0lBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1WB0GEQEGHl1GBBcHUBkMFQsWUAIeXhIHRw5WSQgdBUc3VxpaEQs%3D">《精益思想（白金版）》</a> - 豆瓣评分 8.2
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEWAVQZWhAyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYEQQTBVQea2Jwc1BWRBJgYUh9F18eVWtSTAtpCWUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxEGEgFdG18lBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DhEAEgFcTlMUVkAAUB4MEQpGUAZJUkYCEg4FEggVBRU3VxpaEQs%3D">《给产品经理讲技术》</a>
+
+### 项目管理
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQMbAlccXB0yVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtaHAcQAFITa2MBGgQTTCVWZ1YdElAyEX8MbhBQAUMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxEGGg5XHVIlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1WBZSRg4GHwgcAEYHUBJcElIaAlAaCxBRGgJVGVMdUUc3VxpaEQs%3D">《持续交付：发布可靠软件的系统方法》</a> - 豆瓣评分 8.7
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIWBFQYWhYyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbEQETBFQYa0h7CEc2SF9QYHIdABwFS3IUAQBlPUMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxMDVitaJQIVBlUaUxEFEgBSGVIlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1X0IHGwJQHwhBARsEUE9bRwsbA10bWRABQgEBGVsTBxI3VxpaEQs%3D">《名家经典系列：人件（原书第3版） [Peopleware: Productive Projects and Teams]》</a> - 豆瓣评分 8.4
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQMXBlUaXBcyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtaEAMSBlIZa0dpZHozZihKZ0tPPX0tVmpQAQdoP1MOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxIHVStaJQIVBlUaUxEFEAJVEl0lBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1CBNWF1IBHAxGBhQGUBNbQVIXBlZLCEIEQFRXGlsWURE3VxpaEQs%3D">《硝烟中的Scrum和XP：我们如何实施Scrum》</a> - 豆瓣评分 8.4
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIbDl0eWRAyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbHAsaAlceaxYGYkFUEil8Z2R1CloQXgNXQ1JvIkMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxIHVStaJQIVBlUaUxEFFA5cE1wlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1Ux1VG1NdGl0SAhYPUEhaFwsVDgBIUxdWQQJdGA8QV0A3VxpaEQs%3D">《敏捷软件开发实践 估算与计划》</a> - 豆瓣评分 8.4
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIVAVUTXx0yVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbEgQSD1ETa0BVFmAxGTpdYGlbFRwLdX9hYwZtImUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxIHVStaJQIVBlUaUxEEEwNVGlwlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1D0BRQVMHHV5GVkJSUBJbEgtBV1UTDB0BEgQAGAtHChA3VxpaEQs%3D">《人月神话（40周年中文纪念版） [The Mythical Man-Month：Essays on Software Engineering Anniversary Edition]》</a> - 豆瓣评分 8.3
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQMXBlQSUhcyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtaEAMTDlwZa0ZKWQQrSCxrYFNlUGw4FVgVQBJtBHUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxIHVStaJQIVBlUaUxEEEQ9UGlIlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1XRBSQlRQTA4WVUJTUB9eFAsSBFBLXBIHQgRdTlNFBBM3VxpaEQs%3D">《Scrum敏捷软件开发》</a> - 豆瓣评分 8
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQMTDlQcXxAyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtaFAsTAFEea05%2FT3IscwliYUBlCmkMHUpGDjUTMGUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxIHVStaJQIVBlUaUxEEFQNUHFwlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DBBWG1MHEw8dAhsOUEtdRQoRAQcaXBcGEQ4BG1kVBkU3VxpaEQs%3D">《用户故事与敏捷方法 [User Stories Applied:For Agile Software Development]》</a> - 豆瓣评分 8
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIbD1cTXRIyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbHAoQD1Mca3dkYGwgHRhnYRR5Jk4gFVhOXVB4WGUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxIHVStaJQIVBlUaUxEEGwBWGV8lBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DhEEFAFdG1NGUBYGUBJdQApHAlcdUkBVEgICTggUVho3VxpaEQs%3D">《用户故事地图 [User Story Mapping]》</a> - 豆瓣评分 7.4
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQERBlASUhEyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFgMXDlwfa2BXTGMwcEVgYUVTK0kpQF5teTRAKHUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxELEw9cHVolBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DxYERgcFG1oWBhoPUBtSQVFGU1QeWxRXFAUGGVMdBRU3VxpaEQs%3D">《知行合一 实现价值驱动的敏捷和精益开发》</a>
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEQB10SXB0yVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFwIaDlITa0BAbEcAbS9tYlRfCm9SD2NtdBFtIUMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxELEQBQG1MlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DhJQEVRcHltGC0BVUEtYElIaDwUSWEVXFQ8BGQhCVkE3VxpaEQs%3D">《互联网项目管理实践精粹》</a>
+
+### 团队管理
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQMTA10fWhMyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtaFAYaA1Qda3V0WkMAWR5IYXp5MUcBSH5PZlxHKFMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxMDVitaJQIVBlUaUxEKGgRUGVolBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DxRVQVMFG1kRAEUEUBpTQgoTDwcaX0JSFwVTHlhGVhI3VxpaEQs%3D">《卓有成效的管理者（珍藏版） [The Effective Executive]》</a> - 豆瓣评分 8.8
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEQBF0YUhMyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFwEaBFwda15xEWcUeQkTZ09TFF8dbAREbgZdX1MOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxIDEABSGFIlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DxAKF1IGSwtCBEIHUB4IFwoSB1MbUxJVEQMHTFgVA0E3VxpaEQs%3D">《跃迁：从技术到管理的硅谷路径》</a> - 豆瓣评分 8.4
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIaA1waXBwyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbHQYbBlISa3AHS2EpYR1JYUxlAxwCamJqGVF7XEMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxIDFgBQHF8lBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1XkVWFQ9TGV4TUUVTUB9cFVEbB1dLXhMCEA9VT1IWAkE3VxpaEQs%3D">《告别失控 软件开发团队管理必读(异步图书出品)》</a> - 豆瓣评分 7.9
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQERAlISUhYyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFgcVDlwYaxxfYn0BflpTYmlDEG0rTENFBSwFDFMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxEFUStaJQIVBlUaUxIDGwZWH1slBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1CxNSEAUCS1MTBkYEUBwJFFFBBlISWxYFEQ9dGVsXVxY3VxpaEQs%3D">《赋能 打造应对不确定性的敏捷团队 中信出版社图书 [Team of Teams]》</a> - 豆瓣评分 7.6
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQESAFYbXBEyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFQURB1Ifa35WV1EobF8TYXVlDU49VH90TBFoD1MOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxEFUStaJQIVBlUaUxICEQdcG1olBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DxNXG1UGGFocVhNQUBMLHVFGDlAZDEIBQANUT1wQVUU3VxpaEQs%3D">《OKR工作法：谷歌、领英等顶级公司的高绩效秘籍 [Radical Focus]》</a> - 豆瓣评分 7.6
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQETAFEYXR0yVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFAUWBFMTa0NbaH4peiZJYXZhHR0DTgZIcRNIW0MOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxICFgdVElglBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1CUYFFAddHgkSUBZUUB5bFgsUUlISX0YEEQcBS1MRAUY3VxpaEQs%3D">《CTO说》</a> - 豆瓣评分 7.3
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQESAVUfXR0yVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFQQSA1MTa31ra3IdQlpGYk99XRsyHH4SWglDIFMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxICFABVElglBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DxFVF1QFTwwQVRcFUEhTQVFHUwEbUhUAEFJWEg4TChM3VxpaEQs%3D">《轻流程 IT团队的积分式绩效管理》</a> - 豆瓣评分 7
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQERDlwYWhUyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFgsbBFQba0haSGUMXxtoYUcANxkdUVRVdwx4IlMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxMDVitaJQIVBlUaUxIBEgNSGl8lBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DBYHEQAFGwxFUhdUUBgLRQsQAQIdD0IBFwNWTF0QAhs3VxpaEQs%3D">《技术领导力：程序员如何才能带团队》</a> - 豆瓣评分 5.4
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIUDlcYWhAyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbEwsQBFQea0taSF0cH1hqYWZHKXpSdWdUTzRkQVMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxIHVStaJQIVBlUaUxIBFwBSGlwlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1U0JRQA8HH1wTABtTUBMMFgpGAFUbCEcGFAVSEgtBB0A3VxpaEQs%3D">《敏捷文化：如何打造优秀的高效能团队 [The Agile Culture: Leading through Trust and Owner]》</a>
+
+## 数学与算法
+
+### 数学
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIWAVYaXxYyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbEQQRBlEYa2hqQXIAXyBGYlNbBRldb0lMdSUaE2UOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxIAEgNRG1glBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1XEADFAZdHVoSChZTUE5cQlEaVwEcWRADR1MHHFgXBhY3VxpaEQs%3D">《数学之美（第二版）》</a> - 豆瓣评分 8.9
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIUAVUaWhMyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbEwQSBlQdaxJXdl8SeV0cYQxDA0wHbAF2cjZNA3UOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxIAFgdUG14lBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DxFSFVMGEgscVUJQUEwJFVJHD1YSDxJXFA9REwxAVhI3VxpaEQs%3D">《程序员的数学2 概率统计》</a> - 豆瓣评分 8.7
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIbD1UaXxwyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbHAoSBlESaxRKTkJXZQl1YHtTXG1eYQtpVzJ%2FOVMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxIAFANUE1slBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1CRUAFQVWTlxAAEJXUB8MQFERUgAcXRBQGgRcEgtABxA3VxpaEQs%3D">《程序员的数学3 线性代数》</a> - 豆瓣评分 8.6
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQITD1AYXxQyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbFAoXBFEaa1Jpc05cGCRLYBBHFR0dXHJLABxQXXUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxIHEQNTGlolBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1XhwBFgMBSA5HCxYHUEtTQQsTV1VIDxFSG1ICE1lFBhs3VxpaEQs%3D">《程序员的数学》</a> - 豆瓣评分 7.2
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIXBVAYUhcyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbEAAXBFwZaw8BdGJLeFh%2BYHR1D3kvU1B5ej1mH2UOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxIHVStaJQIVBlUaUxIHFwJQGV0lBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1XBRXGwZVGFxAV0dSUBMJQQtAU1MTWBACFA4AH10QUBo3VxpaEQs%3D">《程序员的数学思维修炼（趣味解读）》</a> - 豆瓣评分 5.4
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEWA1ETUxYyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYEQYWD10YaxZBUgE%2BEhASZ24dKFIcXlFqdFVwQWUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxIGEQJdG1klBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DkcEGwZVTwkSUhEHUEsJQFESVAdLXUVXQQNTGgsSAxM3VxpaEQs%3D">《统计之美：人工智能时代的科学思维》</a>
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIUAFEcXRwyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbEwUWAFMSaxNDEF0yGiNAYBtbHkgzXn9vZChSAVMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxIFEwBWHFMlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1Xx0GGgAHT1wXChYPUEsPE1IWUAUZCEVWGgIGTlMdAUI3VxpaEQs%3D">《统计思维：程序员数学之概率统计（第2版）》</a>
+
+### 算法
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQISAlAYWRQyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbFQcXBFcaa09CRh0JZSx9YHlfAhkTfWZnBhZ8MmUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxMDVitaJQIVBlUaUxIFFQdTHVklBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1CBxRFAYHTFsdVUdVUE5fQlEVVwYZXkBSGwVSG1oVAkA3VxpaEQs%3D">《算法导论（原书第3版）/计算机科学丛书 [Introduction to Algorithms, third edition]》</a> - 豆瓣评分 9.3
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQESAlwSWRYyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFQcbDlcYa1QcS31LZSlnYXV9CxgHSnplcA9DXFMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxIFFA9UG1olBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1XEUCQFNREg8cVkBVUEwJFVIaBVMeXUIDEgFdS1MdVUU3VxpaEQs%3D">《算法图解》</a> - 豆瓣评分 8.4
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEWB1cdXxUyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYEQIQAVEbaxxFW1pUcEFeZ3F5FUgTHUdIB1RNWFMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxIEEgZWHFolBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DkcBFgFSGVpBURoAUBpYQQtHA1xOWBdQGwVWEwtGABE3VxpaEQs%3D">《漫画算法：小灰的算法之旅（全彩）》</a>
+
+## 职业素养与个人成长
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQMQA1AeUxQyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtaFwYXAl0aa1RGYlspbjJDYFFDKBpedEJJfwlsBVMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxIEGg5RHFolBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1U0cKGwdXGgxBUkUPUB0OFgobVFVLDhJXRgRQHAgQVkE3VxpaEQs%3D">《我编程，我快乐：程序员职业规划之道》</a> - 豆瓣评分 7.9
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQESAVIeXhwyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFQQVAlASawt3VnwFblhDYQxXM3tcU3x3XwdAPXUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxIHVStaJQIVBlUaUxILEAdVHlIlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1XBUFGwRWT1IWURYFUB9bQgoSBVZPWRcHFlNQTwxHABo3VxpaEQs%3D">《程序员的自我修养》</a> - 豆瓣评分 6.5
+
+### 职业素养提升
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEQAFAYWhAyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFwUXBFQea1NZDAJWSCNqYE55PkUFdmJUVFBoO3UOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxMDEAJcG1olBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1CBcKRlNWElNHChcPUB5YEQpABlZIWUcEFVMFHVoUBxc3VxpaEQs%3D">《码农翻身：用故事给技术加点料》</a> - 豆瓣评分 9.1
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQMQD1cYXRwyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtaFwoQBFMSaxFhdHowAQ9NYlRTVVAzDwtQWlccWGUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxMDFgdSG1MlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1XBVXEwcHHVwcBRJQUE8JEQoUVVwbXEcLFwACTg8XUUA3VxpaEQs%3D">《程序员修炼之道：从小工到专家》</a> - 豆瓣评分 8.8
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQISDlMaXBYyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbFQsUBlIYaxxQFwZUHQQTYnlPEU09QHwbBCJgCXUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxMDFABSE1IlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1UkYEF1NcGFwTBBpXUB5YHAtGVVUYDBwBQFVTSwhFVxs3VxpaEQs%3D">《极客与团队：软件工程师的团队生存秘笈》</a> - 豆瓣评分 8.3
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIWD1AaXR0yVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbEQoXBlMTa0ZmYkcSZThCYGlTFk8gHQprWCtDBXUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxMDGgRdGVIlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1XxdWEFcCHVoWVhVUUB5SElFCVVdPX0dQE1VcSVpABUU3VxpaEQs%3D">《程序员思维修炼(修订版)》</a> - 豆瓣评分 8.2
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIRAV0cXBIyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbFgQaAFIcaxNSdn9PGD9dZ1NXDHkJRX1iTyt6CHUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxMCEwNcHFslBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1CRcGF1VQHQtFCxNTUB5ZQAoTAQEZCEAFEgNUSwxFVkY3VxpaEQs%3D">《高效能程序员的修炼》</a> - 豆瓣评分 8.2
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQMTA10aXRcyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtaFAYaBlMZa1Vcd1ssfFJqYRsEPkM6TGBMHRJoIGUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxMDVitaJQIVBlUaUxMCEQFdE14lBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1Xh1RQgVSGF0RAxIAUBxfFgsaA1dMXRMHFQEGGw8SAxs3VxpaEQs%3D">《O'Reilly：卓有成效的程序员 [Productive programmer]》</a> - 豆瓣评分 8.1
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQEQBFEYWhMyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFwEWBFQda11QbABPTiNcZ3pDCHA6cndgZQ9JL2UOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxMCFQNSH1MlBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1UkEGEFJQTAsdUkIEUElYFwpBVABJCxBQElUCTFoXAkU3VxpaEQs%3D">《Java工程师修炼之道》</a> - 豆瓣评分 7.8
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQERAlcfXRcyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFgcQA1MZa0dERR0nASgXYGBxM1kvFGkTcCB6W3UOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxMCGwdTE1slBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1WEAARgBSE14WBEFSUEwJQFJHU1MaC0ACFlAGTAsQABI3VxpaEQs%3D">《程序员的成长课》</a> - 豆瓣评分 7.6
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIWA1ISWBMyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbEQYVDlYda11CbFdXRxlBYUodIVovampCYh1mO2UOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxMBGg9SH18lBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1DBQFFwdSSVkcBkdTUEteQQpFAQEZDhRQQg9WGVJFUUc3VxpaEQs%3D">《高效程序员的45个习惯：敏捷开发修炼之道(修订版)》</a> - 豆瓣评分 7.6
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIUBlIZXhcyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbEwMVBVAZa0pYQGYMexMRYGIEVV0eSgdFTz1AAHUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxMAEg5UGlklBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1X0UBFgFcSV8SUhsOUBldRVESVVwcU0AKFQYCHFpBUUY3VxpaEQs%3D">《温伯格技术思想三部曲：颠覆完美软件 软件测试必须知道的几件事》</a> - 豆瓣评分 7.5
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQIUBlIZWRcyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtbEwMVBVcZa0VhV1tPTiUUYEkdCR0hVWZiBgETDFMOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxICVitaJQIVBlUaUxMAFw5UGVglBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1WBALEg5dHQsRARQDUB8LE1IWAAYZW0BVF1VTHQ4UBRQ3VxpaEQs%3D">《温伯格技术思想三部曲：程序开发心理学（银年纪念版）》</a> - 豆瓣评分 7.4
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQETBVAfWBEyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFAAXA1Yfa2ocZ1kKbycVYEdHDEYhZn1beTVbL0MOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxYAUitaJQIVBlUaUxMAFARVHF0lBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1XxJSG1NRTF8WVhQFUEtbHQpABV0TXBULR1dXSFlFB0E3VxpaEQs%3D">《软件开发本质论：追求简约、体现价值、逐步构建》</a> - 豆瓣评分 7.3
+
++ <a href="https://union-click.jd.com/jdc?e=&p=AyIGZRprFQETB1UfWBAyVlgNRQQlW1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYFAISA1Yea09bTHgreiNGZ3RbS3gcUQNsDzFEBnUOHjdUK1sUAxIAVhlaHQEiN1Uca0NsEgZUGloUBxMDVitaJQIVBlUaUxMAGgZdGFglBRIOZUAOewUQAF0aWh0CRQUBH1slMiIEZStrFTIRNxd1WkYDQFQCHg9AAEdQUB1dRVERB1YbWxxRFw5WGg5HUBc3VxpaEQs%3D">《内外兼修：程序员的成长之路》</a> - 豆瓣评分 6.6
+
+### 个人软技能
+
++ <a href="">《把时间当作朋友（第3版 全彩）》</a> - 豆瓣评分 8.5
+
++ <a href="">《暗时间》</a> - 豆瓣评分 8.4
+
++ <a href="">《关键对话：如何高效能沟通（原书第2版） [Crucial Conversations: Tools for Talking When Stak]》</a> - 豆瓣评分 8.4
+
++ <a href="">《温伯格技术思想三部曲：成为技术领导者 掌握全面解决问题的方法》</a> - 豆瓣评分 8
+
++ <a href="">《软技能 代码之外的生存指南》</a> - 豆瓣评分 8
+
++ <a href="">《程序员健康指南》</a> - 豆瓣评分 7.5
+
++ <a href="">《如何把事情做到最好：改变全球9800万人的人生指导书 [Mastery]》</a> - 豆瓣评分 7.2
+
++ <a href="">《程序员的英语》</a> - 豆瓣评分 5.9
+
++ <a href="">《高效能人士的七个习惯（30周年纪念版）》</a>
+
+## 大厂出品
+
+### 阿里巴巴技术丛书
+
++ <a href="">《码出高效：Java开发手册》</a> - 豆瓣评分 8.8
+
++ <a href="">《大数据之路 阿里巴巴大数据实践》</a> - 豆瓣评分 7.8
+
++ <a href="">《技术之瞳 阿里巴巴技术笔试心得》</a> - 豆瓣评分 7.7
+
++ <a href="">《淘宝技术这十年》</a> - 豆瓣评分 7.3
+
++ <a href="">《尽在双11 阿里巴巴技术演进与超越》</a> - 豆瓣评分 7.1
+
++ <a href="">《逆流而上：阿里巴巴技术成长之路》</a> - 豆瓣评分 6.9
+
+### 京东技术丛书
+
++ <a href="">《京东基础架构建设之路（全彩）》</a> - 豆瓣评分 6.2
+
++ <a href="">《京东系统质量保障技术实战》</a> - 豆瓣评分 6.1
+
++ <a href="">《京东技术解密》</a> - 豆瓣评分 6.1
+
+## 工具书
+
++ <a href="">《Linux命令行与shell脚本编程大全（第3版）》</a> - 豆瓣评分 9.1
+
++ <a href="">《阿里巴巴Java开发手册》</a> - 豆瓣评分 8.3
+
++ <a href="">《SQL即查即用 （全彩版）》</a>
+
++ <a href="">《Linux命令速查手册（第三版）》</a>
+
+## 面试求职
+
++ <a href="">《剑指Offer：名企面试官精讲典型编程题（第2版）》</a> - 豆瓣评分 9.1
+
++ <a href="">《编程之美：微软技术面试心得》</a> - 豆瓣评分 8.4
+
++ <a href="">《Java程序员面试笔试宝典》</a> - 豆瓣评分 7.6
+
++ <a href="">《Java程序员面试宝典（第4版）》</a> - 豆瓣评分 5
+
++ <a href="">《编程之法：面试和算法心得》</a>
+
++ <a href="">《Java程序员面试算法宝典》</a>
+
++ <a href="">《Java程序员面试笔试真题库》</a>
+
++ <a href="">《Java程序员面试笔试真题与解析》</a>
+
++ <a href="">《Java核心技术及面试指南》</a>
+
++ <a href="">《解忧程序员：高薪编程、求职面试与成长转型宝典》</a>
+
+## 格局与视野
+
++ <a href="">《全球科技通史》</a> - 豆瓣评分 9.4
+
++ <a href="">《浪潮之巅 第三版 套装上下册》</a> - 豆瓣评分 9.3
+
++ <a href="">《黑客与画家：硅谷创业之父Paul Graham文集 [Hackers and Painters Big Ldeas From the Computer Age]》</a> - 豆瓣评分 8.8
+
++ <a href="">《软件随想录 卷1》</a> - 豆瓣评分 8.8
+
++ <a href="">《软件随想录 卷2》</a> - 豆瓣评分 8.7
+
++ <a href="">《编程人生：15位软件先驱访谈录》</a> - 豆瓣评分 8.5
+
++ <a href="">《大教堂与集市（最新版） [The Cathedral & the Bazaar]》</a> - 豆瓣评分 8.4
+
++ <a href="">《硅谷之谜：浪潮之巅 续集》</a> - 豆瓣评分 8.4
+
++ <a href="">《原则 [Principles]》</a> - 豆瓣评分 8.4
+
++ <a href="">《精益创业》</a> - 豆瓣评分 8.4
+
++ <a href="">《态度：吴军博士新书》</a> - 豆瓣评分 8.1
+
++ <a href="">《见识》</a> - 豆瓣评分 8.1
+
++ <a href="">《极限创新 35岁之前改变世界的全球科技精英》</a> - 豆瓣评分 7.3
+
++ <a href="">《大学的终结：泛在大学与高等教育革命》</a> - 豆瓣评分 7.2
+
++ <a href="">《未来版图 全球聪明公司的科技创新趋势和商业化路径》</a> - 豆瓣评分 7.1
+
++ <a href="">《你好哇，程序员——漫话程序员面试求职、升职加薪、创业与生活》</a> - 豆瓣评分 6.5
+
++ <a href="">《图灵和ACM图灵奖（1966-2015 第五版） 纪念计算机诞生70周年》</a>
+
++ <a href="">《文明之光（全彩印刷套装1-4册）入选2014中国好书/第六届中华优秀出版物获奖图书》</a>
+
++ <a href="">《大师访谈录：成就非凡的软件人生》</a>
+
+## Java之外
+
++ <a href="">《计算机科学丛书：计算机程序的构造和解释（原书第2版）》</a> - 豆瓣评分 9.5
+
++ <a href="">《计算机科学丛书：编译原理（第2版） [Compilers:Principle,Techniques and Tools]》</a> - 豆瓣评分 9.1
+
++ <a href="">《一个APP的诞生——从零开始设计你的手机应用》</a> - 豆瓣评分 6.3
+
++ <a href="">《大型网站性能优化实战：从前端、网络、CDN到后端、大促的全链路性能优化详解》</a>
+
+### 网络知识
+
++ <a href="">《图解HTTP》</a> - 豆瓣评分 8.1
+
++ <a href="">《图解TCP/IP 第5版》</a> - 豆瓣评分 7.8
+
+### 安全知识
+
++ <a href="">《白帽子讲Web安全（纪念版）》</a> - 豆瓣评分 7.4
+
++ <a href="">《Web安全攻防：渗透测试实战指南》</a>
+
+### 工具
+
++ <a href="">《Maven实战》</a> - 豆瓣评分 8.2
+
++ <a href="">《大象：Thinking in UML（第2版）》</a> - 豆瓣评分 8.2
+
++ <a href="">《Git学习指南》</a> - 豆瓣评分 6.7
+
++ <a href="">《UML基础、案例与应用（第3版 修订版）》</a>
+
+### 运维&DevOps
+
++ <a href="">《编码：隐匿在计算机软硬件背后的语言 [Code:The Hidden Language of Computer Hardware and Software]》</a> - 豆瓣评分 9.3
+
++ <a href="">《DevOps实践指南》</a> - 豆瓣评分 9
+
++ <a href="">《性能之巅：洞悉系统、企业与云计算》</a> - 豆瓣评分 8.7
+
++ <a href="">《鸟哥的Linux私房菜 基础学习篇 第四版》</a> - 豆瓣评分 8.2
+
++ <a href="">《DevOps开发运维训练营》</a>
+
+
